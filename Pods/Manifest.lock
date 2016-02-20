@@ -1,0 +1,21 @@
+PODS:
+  - LoginWithClimate (0.1.1)
+
+DEPENDENCIES:
+  - LoginWithClimate (from `https://github.com/TheClimateCorporation/LoginWithClimate`,
+    tag `0.1.1`)
+
+EXTERNAL SOURCES:
+  LoginWithClimate:
+    :git: https://github.com/TheClimateCorporation/LoginWithClimate
+    :tag: 0.1.1
+
+CHECKOUT OPTIONS:
+  LoginWithClimate:
+    :git: https://github.com/TheClimateCorporation/LoginWithClimate
+    :tag: 0.1.1
+
+SPEC CHECKSUMS:
+  LoginWithClimate: d490895ff1f80ef9b0b18a02c7d6c0905f089e08
+
+COCOAPODS: 0.39.0
