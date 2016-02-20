@@ -13,6 +13,7 @@ class ViewController: UIViewController, LoginWithClimateDelegate {
     
     @IBOutlet weak var label: UILabel!
     var accessToken: String?
+    var seesion: Session?
     
     
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class ViewController: UIViewController, LoginWithClimateDelegate {
     }
     
     func didLoginWithClimate(session: Session) {
+        self.seesion = session
         print("access")
         print(session.accessToken)
         print("token")
@@ -78,7 +80,7 @@ class ViewController: UIViewController, LoginWithClimateDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! FieldsViewController
-        vc.myAccessToken = self.accessToken
+        vc.session = self.seesion
     }
 
     @IBAction func onShowFields(sender: AnyObject) {

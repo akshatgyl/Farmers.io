@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import LoginWithClimate
 
 class FieldsViewController: UIViewController {
 
-    var myAccessToken: String?
-    var userid: String?
+    var session: Session?
+    var image: UIImage?
     
     @IBOutlet weak var thumbnailView: UIImageView!
     override func viewDidLoad() {
@@ -19,26 +20,10 @@ class FieldsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        let request = NSMutableURLRequest(URL: NSURL(string: "https://hackillinois.climate.com/api/fields")!)
+        request.setValue("Bearer \((session?.accessToken)!)", forHTTPHeaderField: "Authorization")
         
-        let request = NSMutableURLRequest(URL: NSURL(string: "https://hackillinois.climate.com/api/users/details")!)
-        request.setValue("Bearer \(myAccessToken!)", forHTTPHeaderField: "Authorization")
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
-            (data, response, error) in
-            let jsonObject = try! NSJSONSerialization.JSONObjectWithData(data!, options: [])
-            
-                print("sfsdg")
-                print(jsonObject)
-            
-//                self.userid = jsonObject["id"] as! String
-        
-        }
-        
-        
-        
-        let request1 = NSMutableURLRequest(URL: NSURL(string: "https://hackillinois.climate.com/api/fields")!)
-        request.setValue("Bearer \(myAccessToken!)", forHTTPHeaderField: "Authorization")
-        
-        let task1 = NSURLSession.sharedSession().dataTaskWithRequest(request) {
             (data, response, error) in
             if let data = data {
             let jsonObject = try! NSJSONSerialization.JSONObjectWithData(data, options: [])
@@ -46,10 +31,7 @@ class FieldsViewController: UIViewController {
             let fields = (jsonObject["fields"]) as! [NSDictionary]
                 let field0 = fields[0] 
                 let fieldID = field0["id"] as! String
-                self.fetchThumbnailForField(Int(fieldID)!, accessToken: self.myAccessToken!,userId:  Int(self.userid!)!)
-                
-                
-                
+                self.fetchThumbnailForField(Int(fieldID)!, accessToken: (self.session?.accessToken!)!,userId: (self.session?.userInfo.id)!)
                 
             } else {
                 print(error)
@@ -72,7 +54,12 @@ class FieldsViewController: UIViewController {
             (data, response, error) -> Void in
             // check for 200 response
             let thumbnailImage = UIImage(data: data!)
-            self.thumbnailView.image = thumbnailImage
+            dispatch_async(dispatch_get_main_queue(),{
+                
+                self.thumbnailView.image = thumbnailImage
+                
+            })
+            
             // do something to the data -> set in UIImageView?
         }
         task.resume()
