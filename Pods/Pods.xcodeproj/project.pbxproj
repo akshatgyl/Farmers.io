@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		0CF715DB167C1B1114B52149197A1EBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		0DBB20FBFABC49554B87722A3C9DE18B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B05A7CD634DBDA241B0ECB488DFBA2 /* Login.storyboard */; };
+		15B8BDADC9A0A97FF2385BBF43A3DDC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		19891BFB4747720A62EF30C8A68B45D2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55FFDE90A3D9223A6232E003EF9A396 /* Media.xcassets */; };
-		5B15B4833E5791A2C36AA26B4686E9D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		5B8345DA6BF6CA74CE82789ECEB63D3E /* ClimateWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D21C1B677E5958B925165F2A78E29F5 /* ClimateWebViewController.swift */; };
 		5D052E88742488BF8DC59B8646D9DBAF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55FFDE90A3D9223A6232E003EF9A396 /* Media.xcassets */; };
-		5E774AAAA0B2ACBFBA1CA3E3B5996248 /* Pods-ClimateControlUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2C6FEEB4ECA0EEF9FE89F979FEBA1 /* Pods-ClimateControlUITests-dummy.m */; };
 		63B4129A58EA1E8D7AC6C8D7610C4D80 /* LoginWithClimate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A01EDDF81752F8C7461C1B03EF29D37 /* LoginWithClimate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		950EE4E5BABF6334842F8B6328888421 /* Pods-ClimateControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15219118CFDE63A6C8D81F09FEB4222B /* Pods-ClimateControl-dummy.m */; };
 		98E02D278B162E825DC5D8BA39C409A5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B98958E9E39611B2A0CAC53BDB8B40 /* UserInfo.swift */; };
-		C26F8D6E3FA76DF941826D329209CF47 /* LoginWithClimate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F9549038273DEA27091F40E911D577F /* LoginWithClimate.bundle */; };
+		9A03E174630E56EEC1410D06D616789F /* Pods-ClimateControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 345EE8CCBCA19998E860409887C6FD6C /* Pods-ClimateControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C26F8D6E3FA76DF941826D329209CF47 /* LoginWithClimate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A100E15A08D23F9033E0859771B8B /* LoginWithClimate.bundle */; };
 		D2F8630B1C4EC54A421094C53497FC98 /* LoginWithClimateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF0455F72ACFFE35E178AAC3CB1D7D /* LoginWithClimateButton.swift */; };
 		E53DB31B834923DCE82A1EA5502282B3 /* OIDC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48A8C41A7611F95758FEE1F57A49AA /* OIDC.swift */; };
-		F125F25B94BF0736585A13E49975ACAD /* Pods-ClimateControlUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7742850C3935B935618917D4523C06B2 /* Pods-ClimateControlUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF43FA03C5EC5F87217026A1038E6654 /* LoginWithClimate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA6B898DFCDA0A615DCF7969149AF3A /* LoginWithClimate-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0DD5A6F96BD9BF1E268628BF78F24FE /* PBXContainerItemProxy */ = {
+		0B61BEED5AEEA98173B56AC1E4B13194 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -42,47 +42,47 @@
 
 /* Begin PBXFileReference section */
 		08113CE52433328E49493DFCD3D94386 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DADF1A338E53A8CEF0FE332271AA71E /* LoginWithClimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginWithClimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F9549038273DEA27091F40E911D577F /* LoginWithClimate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithClimate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BE2C6FEEB4ECA0EEF9FE89F979FEBA1 /* Pods-ClimateControlUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClimateControlUITests-dummy.m"; sourceTree = "<group>"; };
-		2E9858A316E52F5E7EAEB461EA805619 /* Pods-ClimateControlUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControlUITests-resources.sh"; sourceTree = "<group>"; };
+		15219118CFDE63A6C8D81F09FEB4222B /* Pods-ClimateControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClimateControl-dummy.m"; sourceTree = "<group>"; };
+		15532FB619B8CFA7714565DE2DB19C3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345EE8CCBCA19998E860409887C6FD6C /* Pods-ClimateControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClimateControl-umbrella.h"; sourceTree = "<group>"; };
+		3814BAEB6EEB2DD79E3D6262FBE9D32B /* Pods-ClimateControl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControl-resources.sh"; sourceTree = "<group>"; };
+		3D9A100E15A08D23F9033E0859771B8B /* LoginWithClimate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithClimate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		58B05A7CD634DBDA241B0ECB488DFBA2 /* Login.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Pod/Resources/Login.storyboard; sourceTree = "<group>"; };
 		5D21C1B677E5958B925165F2A78E29F5 /* ClimateWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClimateWebViewController.swift; path = Pod/Classes/ClimateWebViewController.swift; sourceTree = "<group>"; };
-		61E20A9026F878FF03FF7073011D541D /* Pods-ClimateControlUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClimateControlUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6807C246D1643F6214CBF15188FD3B15 /* Pods_ClimateControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFF0455F72ACFFE35E178AAC3CB1D7D /* LoginWithClimateButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginWithClimateButton.swift; path = Pod/Classes/LoginWithClimateButton.swift; sourceTree = "<group>"; };
 		7264241D61D9F95BB2AD4B3C60D7D275 /* LoginWithClimate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoginWithClimate.modulemap; sourceTree = "<group>"; };
-		7742850C3935B935618917D4523C06B2 /* Pods-ClimateControlUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClimateControlUITests-umbrella.h"; sourceTree = "<group>"; };
 		7A01EDDF81752F8C7461C1B03EF29D37 /* LoginWithClimate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginWithClimate-umbrella.h"; sourceTree = "<group>"; };
+		9D592E71281AE2234944ED2D6E0808AD /* LoginWithClimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginWithClimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B560AD22585C73D2D1F87A95EA01F2 /* LoginWithClimate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginWithClimate.xcconfig; sourceTree = "<group>"; };
-		B461BA5BD5178B1096C404766A8AEB53 /* Pods-ClimateControlUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControlUITests-frameworks.sh"; sourceTree = "<group>"; };
-		BA0DA1340616E5A64ACFDBD3672399E8 /* Pods-ClimateControlUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClimateControlUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC48A8C41A7611F95758FEE1F57A49AA /* OIDC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OIDC.swift; path = Pod/Classes/OIDC.swift; sourceTree = "<group>"; };
-		BE3FFDC1402AEED2DA7FD6D9F36F186A /* Pods-ClimateControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControlUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C0A227C668BAECDFDC3D48C5CB944370 /* LoginWithClimate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginWithClimate-prefix.pch"; sourceTree = "<group>"; };
-		C1E0CD2025FFA45DFA6459EC96A87FF8 /* Pods-ClimateControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBA6B898DFCDA0A615DCF7969149AF3A /* LoginWithClimate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoginWithClimate-dummy.m"; sourceTree = "<group>"; };
+		CEDEFBCC768907F9542FD72BD546324E /* Pods-ClimateControl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClimateControl-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D55FFDE90A3D9223A6232E003EF9A396 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Pod/Resources/Media.xcassets; sourceTree = "<group>"; };
-		DC0D188C784868503691B4AC88C2C6A6 /* Pods-ClimateControlUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ClimateControlUITests.modulemap"; sourceTree = "<group>"; };
-		F40450192C3CDEB80BB6D4E98A70F02A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD284398025F2C187769C20AAFFA9B0F /* Pods-ClimateControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControl.debug.xcconfig"; sourceTree = "<group>"; };
+		E044D97FEA687AB61337F658B8ADA960 /* Pods-ClimateControl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClimateControl-acknowledgements.plist"; sourceTree = "<group>"; };
+		EBE7544659D87A48026E42119AE0CD04 /* Pods-ClimateControl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControl-frameworks.sh"; sourceTree = "<group>"; };
+		F2D35DC786BD0BA8AF7F747726A7A6FE /* Pods_ClimateControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55B149FC6DD8BBF8ED85CC42D8DF867 /* Pods-ClimateControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ClimateControl.modulemap"; sourceTree = "<group>"; };
 		F9B98958E9E39611B2A0CAC53BDB8B40 /* UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Pod/Classes/UserInfo.swift; sourceTree = "<group>"; };
+		FF1FB926BCA2C27A0CFBA52E8277CD60 /* Pods-ClimateControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F7131CBB81BE3C6E7CB05D7DCAFB4CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B8BDADC9A0A97FF2385BBF43A3DDC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49CB051FD1872F463AA1027049C6235B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5A52E0FCB8028BF6BA52C8F7B4046185 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B15B4833E5791A2C36AA26B4686E9D7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +111,8 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				2969AA10762F9E2492F5A3F240C1E178 /* Pods */,
-				C69F40CAE8C7FB88FDD5CB6237B7FDC5 /* Products */,
-				BDCD2425043D89CA6E5A3613DAB3AA27 /* Targets Support Files */,
+				B480C1C8DF4CD8EEFB75A7D7DBE4D924 /* Products */,
+				B0112F2768D4BEF7313A6898151D6F98 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,20 +152,30 @@
 			path = LoginWithClimate;
 			sourceTree = "<group>";
 		};
+		B0112F2768D4BEF7313A6898151D6F98 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F62106E256AFA6AC753A0CD253C54171 /* Pods-ClimateControl */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B480C1C8DF4CD8EEFB75A7D7DBE4D924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A100E15A08D23F9033E0859771B8B /* LoginWithClimate.bundle */,
+				9D592E71281AE2234944ED2D6E0808AD /* LoginWithClimate.framework */,
+				F2D35DC786BD0BA8AF7F747726A7A6FE /* Pods_ClimateControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BDCD2425043D89CA6E5A3613DAB3AA27 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F9ED57E73BA541920072CFFF1787C23D /* Pods-ClimateControlUITests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
@@ -176,42 +186,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C69F40CAE8C7FB88FDD5CB6237B7FDC5 /* Products */ = {
+		F62106E256AFA6AC753A0CD253C54171 /* Pods-ClimateControl */ = {
 			isa = PBXGroup;
 			children = (
-				0F9549038273DEA27091F40E911D577F /* LoginWithClimate.bundle */,
-				0DADF1A338E53A8CEF0FE332271AA71E /* LoginWithClimate.framework */,
-				6807C246D1643F6214CBF15188FD3B15 /* Pods_ClimateControlUITests.framework */,
+				15532FB619B8CFA7714565DE2DB19C3C /* Info.plist */,
+				F55B149FC6DD8BBF8ED85CC42D8DF867 /* Pods-ClimateControl.modulemap */,
+				CEDEFBCC768907F9542FD72BD546324E /* Pods-ClimateControl-acknowledgements.markdown */,
+				E044D97FEA687AB61337F658B8ADA960 /* Pods-ClimateControl-acknowledgements.plist */,
+				15219118CFDE63A6C8D81F09FEB4222B /* Pods-ClimateControl-dummy.m */,
+				EBE7544659D87A48026E42119AE0CD04 /* Pods-ClimateControl-frameworks.sh */,
+				3814BAEB6EEB2DD79E3D6262FBE9D32B /* Pods-ClimateControl-resources.sh */,
+				345EE8CCBCA19998E860409887C6FD6C /* Pods-ClimateControl-umbrella.h */,
+				DD284398025F2C187769C20AAFFA9B0F /* Pods-ClimateControl.debug.xcconfig */,
+				FF1FB926BCA2C27A0CFBA52E8277CD60 /* Pods-ClimateControl.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F9ED57E73BA541920072CFFF1787C23D /* Pods-ClimateControlUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F40450192C3CDEB80BB6D4E98A70F02A /* Info.plist */,
-				DC0D188C784868503691B4AC88C2C6A6 /* Pods-ClimateControlUITests.modulemap */,
-				61E20A9026F878FF03FF7073011D541D /* Pods-ClimateControlUITests-acknowledgements.markdown */,
-				BA0DA1340616E5A64ACFDBD3672399E8 /* Pods-ClimateControlUITests-acknowledgements.plist */,
-				2BE2C6FEEB4ECA0EEF9FE89F979FEBA1 /* Pods-ClimateControlUITests-dummy.m */,
-				B461BA5BD5178B1096C404766A8AEB53 /* Pods-ClimateControlUITests-frameworks.sh */,
-				2E9858A316E52F5E7EAEB461EA805619 /* Pods-ClimateControlUITests-resources.sh */,
-				7742850C3935B935618917D4523C06B2 /* Pods-ClimateControlUITests-umbrella.h */,
-				C1E0CD2025FFA45DFA6459EC96A87FF8 /* Pods-ClimateControlUITests.debug.xcconfig */,
-				BE3FFDC1402AEED2DA7FD6D9F36F186A /* Pods-ClimateControlUITests.release.xcconfig */,
-			);
-			name = "Pods-ClimateControlUITests";
-			path = "Target Support Files/Pods-ClimateControlUITests";
+			name = "Pods-ClimateControl";
+			path = "Target Support Files/Pods-ClimateControl";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		090BCBC1FE571F36A33B751670BE6822 /* Headers */ = {
+		9168BE17130FD8DBA129F825A23F7A0C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F125F25B94BF0736585A13E49975ACAD /* Pods-ClimateControlUITests-umbrella.h in Headers */,
+				9A03E174630E56EEC1410D06D616789F /* Pods-ClimateControl-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +242,7 @@
 			);
 			name = LoginWithClimate;
 			productName = LoginWithClimate;
-			productReference = 0DADF1A338E53A8CEF0FE332271AA71E /* LoginWithClimate.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		754097E578EF858248B08A118CA51BAA /* Pods-ClimateControlUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5097C89DA6F25F83BABB208EC573DFE9 /* Build configuration list for PBXNativeTarget "Pods-ClimateControlUITests" */;
-			buildPhases = (
-				EA27E73991179D9C51A4B8263C026A1A /* Sources */,
-				5A52E0FCB8028BF6BA52C8F7B4046185 /* Frameworks */,
-				090BCBC1FE571F36A33B751670BE6822 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC4C7692F7ECA26A2B67B763A4A86C37 /* PBXTargetDependency */,
-			);
-			name = "Pods-ClimateControlUITests";
-			productName = "Pods-ClimateControlUITests";
-			productReference = 6807C246D1643F6214CBF15188FD3B15 /* Pods_ClimateControlUITests.framework */;
+			productReference = 9D592E71281AE2234944ED2D6E0808AD /* LoginWithClimate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AA03234BEBC3FE82C4684B270DFD0764 /* LoginWithClimate-LoginWithClimate */ = {
@@ -277,8 +259,26 @@
 			);
 			name = "LoginWithClimate-LoginWithClimate";
 			productName = "LoginWithClimate-LoginWithClimate";
-			productReference = 0F9549038273DEA27091F40E911D577F /* LoginWithClimate.bundle */;
+			productReference = 3D9A100E15A08D23F9033E0859771B8B /* LoginWithClimate.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		FA0438F3DF5C3D7EF036F0118BE989BB /* Pods-ClimateControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6786F01CC8643B1173A515DC3084919 /* Build configuration list for PBXNativeTarget "Pods-ClimateControl" */;
+			buildPhases = (
+				0C052EE61AFE192D935AEF195F02073A /* Sources */,
+				1F7131CBB81BE3C6E7CB05D7DCAFB4CD /* Frameworks */,
+				9168BE17130FD8DBA129F825A23F7A0C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24783AA5475C0CAF29948B0AEC4726E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-ClimateControl";
+			productName = "Pods-ClimateControl";
+			productReference = F2D35DC786BD0BA8AF7F747726A7A6FE /* Pods_ClimateControl.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -297,13 +297,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C69F40CAE8C7FB88FDD5CB6237B7FDC5 /* Products */;
+			productRefGroup = B480C1C8DF4CD8EEFB75A7D7DBE4D924 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				014E1A56329ADA7E1E5524FEC552D965 /* LoginWithClimate */,
 				AA03234BEBC3FE82C4684B270DFD0764 /* LoginWithClimate-LoginWithClimate */,
-				754097E578EF858248B08A118CA51BAA /* Pods-ClimateControlUITests */,
+				FA0438F3DF5C3D7EF036F0118BE989BB /* Pods-ClimateControl */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +330,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C052EE61AFE192D935AEF195F02073A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950EE4E5BABF6334842F8B6328888421 /* Pods-ClimateControl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		788A219E4A3F9B6A5285335E85A21314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,32 +357,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA27E73991179D9C51A4B8263C026A1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E774AAAA0B2ACBFBA1CA3E3B5996248 /* Pods-ClimateControlUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		24783AA5475C0CAF29948B0AEC4726E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoginWithClimate;
+			target = 014E1A56329ADA7E1E5524FEC552D965 /* LoginWithClimate */;
+			targetProxy = 0B61BEED5AEEA98173B56AC1E4B13194 /* PBXContainerItemProxy */;
+		};
 		265FF36372F3C934BCACA840D5B456DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LoginWithClimate-LoginWithClimate";
 			target = AA03234BEBC3FE82C4684B270DFD0764 /* LoginWithClimate-LoginWithClimate */;
 			targetProxy = F40B639432877E9A7F13D27DD158B07C /* PBXContainerItemProxy */;
 		};
-		CC4C7692F7ECA26A2B67B763A4A86C37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LoginWithClimate;
-			target = 014E1A56329ADA7E1E5524FEC552D965 /* LoginWithClimate */;
-			targetProxy = B0DD5A6F96BD9BF1E268628BF78F24FE /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		10EDD6E8DD77675666E1B58A5E711209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD284398025F2C187769C20AAFFA9B0F /* Pods-ClimateControl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControl/Pods-ClimateControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ClimateControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,37 +472,6 @@
 			};
 			name = Release;
 		};
-		64F1D9648C2EA09B5AA2AF56DFF8B97C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1E0CD2025FFA45DFA6459EC96A87FF8 /* Pods-ClimateControlUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControlUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControlUITests/Pods-ClimateControlUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ClimateControlUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,36 +503,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BACB44D98292FB458C2F1BF3D4333F94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE3FFDC1402AEED2DA7FD6D9F36F186A /* Pods-ClimateControlUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControlUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControlUITests/Pods-ClimateControlUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ClimateControlUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -588,6 +558,36 @@
 			};
 			name = Debug;
 		};
+		E71F6E77CCB3A5EE2F86759C5064297C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1FB926BCA2C27A0CFBA52E8277CD60 /* Pods-ClimateControl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControl/Pods-ClimateControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ClimateControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,11 +609,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5097C89DA6F25F83BABB208EC573DFE9 /* Build configuration list for PBXNativeTarget "Pods-ClimateControlUITests" */ = {
+		D6786F01CC8643B1173A515DC3084919 /* Build configuration list for PBXNativeTarget "Pods-ClimateControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64F1D9648C2EA09B5AA2AF56DFF8B97C /* Debug */,
-				BACB44D98292FB458C2F1BF3D4333F94 /* Release */,
+				10EDD6E8DD77675666E1B58A5E711209 /* Debug */,
+				E71F6E77CCB3A5EE2F86759C5064297C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

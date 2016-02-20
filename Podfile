@@ -4,7 +4,7 @@
  use_frameworks!
 
 target 'ClimateControl' do
-
+pod "LoginWithClimate", :git => 'https://github.com/TheClimateCorporation/LoginWithClimate', :tag => '0.1.1'
 end
 
 target 'ClimateControlTests' do
@@ -13,7 +13,7 @@ end
 
 target 'ClimateControlUITests' do
 
-pod "LoginWithClimate", :git => 'https://github.com/TheClimateCorporation/LoginWithClimate', :tag => '0.1.1'
+
 
 end
 
