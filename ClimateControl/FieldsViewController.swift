@@ -31,6 +31,12 @@ class FieldsViewController: UIViewController {
             let fields = (jsonObject["fields"]) as! [NSDictionary]
                 let field0 = fields[0] 
                 let fieldID = field0["id"] as! String
+                let fieldCenter = field0["centroid"] as! NSDictionary
+                let coordinates = fieldCenter["coordinates"] as! NSArray
+                let longi = coordinates[0] as! Double
+                let lati = coordinates[1] as! Double
+                print(longi)
+                print(lati)
                 self.fetchThumbnailForField(Int(fieldID)!, accessToken: (self.session?.accessToken!)!,userId: (self.session?.userInfo.id)!)
                 
             } else {
