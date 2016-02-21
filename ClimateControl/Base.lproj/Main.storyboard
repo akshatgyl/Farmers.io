@@ -119,22 +119,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fields" id="iMg-MO-DC1">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="vJi-4R-Q2C">
-                            <connections>
-                                <action selector="onUser:" destination="eWv-Zk-Tr1" id="77s-2G-KKt"/>
-                            </connections>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ovK-vZ-CRn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HrG-D2-tl7">
+                                <rect key="frame" x="16" y="11" width="10" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_menu"/>
+                                <connections>
+                                    <action selector="showMenu:" destination="eWv-Zk-Tr1" eventType="touchUpInside" id="GI9-MF-JEr"/>
+                                </connections>
+                            </button>
+
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="barButton" destination="HrG-D2-tl7" id="Weh-Wg-nBd"/>
                         <outlet property="customTableView" destination="iI5-GQ-eGK" id="GMc-yE-2XK"/>
                         <segue destination="h8c-nK-ncL" kind="presentation" identifier="displayDetails" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="0My-Q6-QBd"/>
-                        <segue destination="srv-WR-xw5" kind="push" identifier="displayUser" id="5Jf-0Z-kmq"/>
+
+                        <segue destination="OFg-gJ-dT2" kind="show" identifier="showMenuSegue" id="kdR-mS-CxP"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-Ap-5kO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2067.5" y="261.5"/>
+            <point key="canvasLocation" x="2068.5" y="332.5"/>
         </scene>
         <!--Details-->
         <scene sceneID="oFU-HR-S1d">
@@ -193,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-T2-b7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499.5" y="261.5"/>
+            <point key="canvasLocation" x="2607.5" y="-479.5"/>
         </scene>
         <!--User Info View Controller-->
         <scene sceneID="eSJ-te-2ns">
@@ -269,7 +278,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h71-Pb-ofw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2250.5" y="1026.5"/>
+
+            <point key="canvasLocation" x="2451.5" y="1113.5"/>
+
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="nQc-LV-1Qo">
@@ -496,7 +507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i2-a8-5L8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="998"/>
+            <point key="canvasLocation" x="1923" y="1080"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5v1-y5-A1J">
@@ -517,11 +528,138 @@
             </objects>
             <point key="canvasLocation" x="1480.5" y="261.5"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="2wz-pT-XBr">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" modalPresentationStyle="currentContext" id="OFg-gJ-dT2" customClass="MenuViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZl-xe-itB"/>
+                        <viewControllerLayoutGuide type="bottom" id="hVy-cM-X45"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c3M-es-6M4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmx-86-CWq">
+                                <rect key="frame" x="158" y="473" width="59" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="CLOSE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeMenu:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="vI0-ef-qei"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k29-OM-W0O">
+                                <rect key="frame" x="37" y="209" width="300" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-BU-UGD">
+                                        <rect key="frame" x="50" y="65" width="187" height="22"/>
+                                        <accessibility key="accessibilityConfiguration" label="FEED"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="HwY-5o-y1H"/>
+                                            <constraint firstAttribute="width" constant="187" id="IHi-aB-dhI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="FEED" image="ic_activity.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="8DA-LI-an3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wD0-bb-KcY">
+                                        <rect key="frame" x="50" y="105" width="200" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="ACTIVITY"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8ma-CU-bgF"/>
+                                            <constraint firstAttribute="width" constant="200" id="GWt-hj-sIn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ACTIVITY" image="ic_activity.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="cye-6z-XEO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXQ-ZP-nUt">
+                                        <rect key="frame" x="50" y="8" width="204" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="PROFILE"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="204" id="9zZ-7e-83R"/>
+                                            <constraint firstAttribute="height" constant="40" id="uaa-FI-WRu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="PROFILE" image="ic_profile.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="UJ0-i3-feS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-iA-ING">
+                                        <rect key="frame" x="54" y="202" width="200" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="SETTINGS"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="17z-Fl-e58"/>
+                                            <constraint firstAttribute="width" constant="200" id="spu-GE-cma"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="SETTINGS" image="ic_activity.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="Tkk-4i-yQA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8Ct-iA-ING" secondAttribute="bottom" constant="8" id="2ud-3a-ET3"/>
+                                    <constraint firstItem="wD0-bb-KcY" firstAttribute="top" secondItem="R3v-BU-UGD" secondAttribute="bottom" constant="18" id="44I-KG-1xh"/>
+                                    <constraint firstItem="R3v-BU-UGD" firstAttribute="top" secondItem="LXQ-ZP-nUt" secondAttribute="bottom" constant="17" id="An6-9v-4qN"/>
+                                    <constraint firstItem="8Ct-iA-ING" firstAttribute="centerX" secondItem="wD0-bb-KcY" secondAttribute="centerX" constant="4" id="FI4-Vm-ZDV"/>
+                                    <constraint firstItem="wD0-bb-KcY" firstAttribute="centerX" secondItem="R3v-BU-UGD" secondAttribute="centerX" constant="6.5" id="IJ9-da-RmN"/>
+                                    <constraint firstAttribute="centerX" secondItem="LXQ-ZP-nUt" secondAttribute="centerX" constant="-2" id="dfJ-e2-2p1"/>
+                                    <constraint firstAttribute="width" constant="300" id="h4w-Da-WyS"/>
+                                    <constraint firstItem="LXQ-ZP-nUt" firstAttribute="top" secondItem="k29-OM-W0O" secondAttribute="top" constant="8" id="kJu-PS-n9V"/>
+                                    <constraint firstItem="LXQ-ZP-nUt" firstAttribute="centerX" secondItem="R3v-BU-UGD" secondAttribute="centerX" constant="8.5" id="lAl-X4-jJJ"/>
+                                    <constraint firstAttribute="height" constant="250" id="szN-Fi-XZp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="k29-OM-W0O" secondAttribute="centerX" id="Plo-cu-CC5"/>
+                            <constraint firstAttribute="centerY" secondItem="k29-OM-W0O" secondAttribute="centerY" id="iH3-ZU-urP"/>
+                            <constraint firstItem="Bmx-86-CWq" firstAttribute="top" secondItem="k29-OM-W0O" secondAttribute="bottom" constant="14" id="x8h-yF-MJw"/>
+                            <constraint firstItem="Bmx-86-CWq" firstAttribute="centerX" secondItem="c3M-es-6M4" secondAttribute="centerX" id="xZR-L8-XIF"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iw9-yQ-Bdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2607.5" y="332.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="accountVC" width="375" height="667"/>
         <image name="background" width="1250" height="781"/>
         <image name="farmers.io" width="340" height="77"/>
+        <image name="ic_activity.png" width="25" height="19"/>
         <image name="ic_highlight_off_white_36pt" width="36" height="36"/>
+        <image name="ic_menu" width="10" height="14"/>
+        <image name="ic_profile.png" width="17" height="24"/>
     </resources>
 </document>

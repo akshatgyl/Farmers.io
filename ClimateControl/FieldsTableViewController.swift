@@ -16,11 +16,17 @@ import WatchConnectivity
 class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate {
     
     
+    
+    
+    @IBOutlet weak var barButton: UIButton!
+    
     let locationManager = CLLocationManager()
     var session: Session?
     var image: UIImage?
     var fields: NSArray?
 
+    
+    private lazy var presentationAnimator = GuillotineTransitionAnimation()
     
     //@IBOutlet weak var customTableView: BMCustomTableView!
     
@@ -30,6 +36,11 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let navBar = self.navigationController!.navigationBar
+        navBar.barTintColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+
         
         if WCSession.isSupported() {
             WCSession.defaultSession().delegate = self
@@ -75,6 +86,19 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
         
         task.resume()
         
+    }
+    
+    
+    @IBAction func showMenu(sender: UIButton) {
+        let menuVC = storyboard!.instantiateViewControllerWithIdentifier("MenuViewController")
+        menuVC.modalPresentationStyle = .Custom
+        menuVC.transitioningDelegate = self
+        if menuVC is GuillotineAnimationDelegate {
+            presentationAnimator.animationDelegate = menuVC as? GuillotineAnimationDelegate
+        }
+        presentationAnimator.supportView = self.navigationController?.navigationBar
+        presentationAnimator.presentButton = sender
+        self.presentViewController(menuVC, animated: true, completion: nil)
     }
     
     
@@ -245,4 +269,17 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
     }
     */
     
+}
+
+extension FieldsTableViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        presentationAnimator.mode = .Presentation
+        return presentationAnimator
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        presentationAnimator.mode = .Dismissal
+        return presentationAnimator
+    }
 }
