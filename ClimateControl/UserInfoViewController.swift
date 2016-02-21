@@ -28,9 +28,9 @@ class UserInfoViewController: UIViewController {
         name.text = (session?.userInfo.firstName)! + " " + (session?.userInfo.lastName)!
         
         
-        address.text = session?.userInfo.address1
-        zipcode.text = session?.userInfo.zip
-        phone.text = session?.userInfo.phone
+        address.text = "107 McAurther Drive" //session?.userInfo.address1
+        zipcode.text = "61801" //session?.userInfo.zip
+        phone.text = "7655326554" //session?.userInfo.phone
         
         
         // Do any additional setup after loading the view.

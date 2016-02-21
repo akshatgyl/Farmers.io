@@ -209,6 +209,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="accountVC" translatesAutoresizingMaskIntoConstraints="NO" id="Eia-JI-JXj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aditya Dhingra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-zc-b7e">
+                                <rect key="frame" x="20" y="120" width="335" height="65"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-Aw-iVG">
                                 <rect key="frame" x="20" y="64" width="335" height="65"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
@@ -234,19 +240,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-Hw-b4K">
-                                <rect key="frame" x="14" y="8" width="36" height="36"/>
+                                <rect key="frame" x="13" y="20" width="36" height="36"/>
                                 <state key="normal" image="ic_highlight_off_white_36pt"/>
                                 <connections>
                                     <action selector="closeNow:" destination="srv-WR-xw5" eventType="touchUpInside" id="Fxy-5V-xzz"/>
                                     <action selector="toAction:" destination="srv-WR-xw5" eventType="touchUpInside" id="btc-ze-Mzd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aditya Dhingra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-zc-b7e">
-                                <rect key="frame" x="20" y="120" width="335" height="65"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtk-Il-hhE">
+                                <rect key="frame" x="318" y="28" width="57" height="30"/>
+                                <state key="normal" title="Data">
+                                    <color key="titleColor" red="0.98823535439999999" green="0.10588236149999999" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Idh-n7-lY0" kind="presentation" id="cJ1-vj-MRZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -273,6 +282,37 @@
             </objects>
             <point key="canvasLocation" x="2653.5" y="261.5"/>
         </scene>
+        <!--Data View Controller-->
+        <scene sceneID="vQG-re-cgB">
+            <objects>
+                <viewController id="Idh-n7-lY0" customClass="DataViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J3e-dG-Z1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKJ-cK-Dso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eDd-2I-kRg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rawdata" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-0t-aPB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxe-ER-IVC">
+                                <rect key="frame" x="20" y="28" width="36" height="36"/>
+                                <state key="normal" image="ic_highlight_off_white_36pt"/>
+                                <connections>
+                                    <action selector="close:" destination="Idh-n7-lY0" eventType="touchUpInside" id="j1L-bC-pJX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abn-Zk-ic8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3125.5" y="261.5"/>
+        </scene>
         <!--Weather View Controller-->
         <scene sceneID="nQc-LV-1Qo">
             <objects>
@@ -282,20 +322,20 @@
                         <viewControllerLayoutGuide type="bottom" id="Wn3-wx-pvV"/>
                     </layoutGuides>
                     <view key="view" contentMode="top" id="Kqv-bz-HSl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9jb-fr-MI6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZf-kE-1az" userLabel="Tint View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-7l-ED6" userLabel="Weather Container View">
-                                        <rect key="frame" x="0.0" y="30" width="375" height="345"/>
+                                        <rect key="frame" x="0.0" y="30" width="600" height="345"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tH5-ly-MHL">
-                                                <rect key="frame" x="103" y="0.0" width="171" height="345"/>
+                                                <rect key="frame" x="215" y="0.0" width="171" height="345"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melbourne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-tH-Yp5">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="43"/>
@@ -342,10 +382,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRI-bq-4iT" userLabel="Forecast Container View">
-                                        <rect key="frame" x="0.0" y="492" width="375" height="115"/>
+                                        <rect key="frame" x="0.0" y="425" width="600" height="115"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
-                                                <rect key="frame" x="30" y="0.0" width="314" height="115"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
+                                                <rect key="frame" x="142" y="0.0" width="314" height="115"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-i7-DNK">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="115"/>
@@ -624,7 +664,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iw9-yQ-Bdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3391.5" y="485.5"/>
+            <point key="canvasLocation" x="3340.5" y="822.5"/>
         </scene>
     </scenes>
     <resources>
@@ -636,8 +676,9 @@
         <image name="ic_person_outline_white_36pt" width="36" height="36"/>
         <image name="ic_pin_drop_white_36pt" width="36" height="36"/>
         <image name="ic_wb_sunny_white_36pt" width="36" height="36"/>
+        <image name="rawdata" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Tt-kd-D1K"/>
+        <segue reference="b67-Vz-5He"/>
     </inferredMetricsTieBreakers>
 </document>
