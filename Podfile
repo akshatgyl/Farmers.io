@@ -10,6 +10,7 @@ target 'ClimateControl' do
 	pod "LoginWithClimate", :git => 'https://github.com/TheClimateCorporation/LoginWithClimate', :tag => '0.1.1'
 
 pod "BMCustomTableView"
+pod “RandomColorSwift”
 
 end
 

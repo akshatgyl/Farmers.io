@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '088B3ED76E6F41BEDDB19525'
+               BlueprintIdentifier = '6911B863B0473967740AAB9E'
                BlueprintName = 'LoginWithClimate-LoginWithClimate'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LoginWithClimate.bundle'>

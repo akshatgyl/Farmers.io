@@ -10,6 +10,7 @@ import UIKit
 import LoginWithClimate
 import MapKit
 import BMCustomTableView
+import RandomColorSwift
 
 
 class FieldsTableViewController: UIViewController, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate {
@@ -32,10 +33,13 @@ class FieldsTableViewController: UIViewController, CLLocationManagerDelegate, UI
         
         // Do any aditional setup after loading the view.
         
+        customTableView.dataSource = self
+        customTableView.delegate = self
+        
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
-        //colors = randomColorsCount(20, hue: .Random, luminosity: .Light)
+        colors = randomColorsCount(20, hue: .Random, luminosity: .Light)
         
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
@@ -142,6 +146,7 @@ class FieldsTableViewController: UIViewController, CLLocationManagerDelegate, UI
                 task.resume()
         
         print(self.fields)
+        cell.backgroundColor = colors[indexPath.row]
         return cell
         
     }

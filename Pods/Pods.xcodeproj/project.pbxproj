@@ -7,40 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A43BB0A7E49F9744E21FF475DB5281C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 075735DFEEDE8FD33D965446DF009082 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CF715DB167C1B1114B52149197A1EBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		0DBB20FBFABC49554B87722A3C9DE18B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDB9F29934B18715CA7FEF089914610 /* Login.storyboard */; };
-		112C366CB8603BDC7575E25CFEBBC6DF /* Pods-ClimateControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1061D7B3E310DC364D54AA50344E691 /* Pods-ClimateControl-dummy.m */; };
-		196CF454A913830FA8D22D0E8990EFF3 /* BMCustomTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD9FC925C6230097FB2D1A826E7485A8 /* BMCustomTableView.bundle */; };
-		19891BFB4747720A62EF30C8A68B45D2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5E4DDCA2E4B08F62F47683EA6521B /* Media.xcassets */; };
-		1ECABA24D477D0DBE6A1FAC8C4FF66D4 /* BMCustomTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F625A54FAF06E971E456929485CC96A3 /* BMCustomTableView-dummy.m */; };
-		4236C91444059A4893A046C9BBA0D2F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0DBB20FBFABC49554B87722A3C9DE18B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADACEBD301BC544560D5B06EA8DDF349 /* Login.storyboard */; };
+		196CF454A913830FA8D22D0E8990EFF3 /* BMCustomTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F2F2988B89CEB17097F49ECA15B94AC /* BMCustomTableView.bundle */; };
+		19891BFB4747720A62EF30C8A68B45D2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C3276FACE1302794DC8545078194 /* Media.xcassets */; };
+		1C46DD831B4A72BD8CA99549ACB2F15C /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E779C23CC18C3AB5D0A873ACA1940 /* ColorDefinition.swift */; };
+		1ECABA24D477D0DBE6A1FAC8C4FF66D4 /* BMCustomTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB3E2709EEE8D4DEA374A64EB5BD2AB /* BMCustomTableView-dummy.m */; };
+		3D5BD641D155CC2B0DBCE2C7E522CA25 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9B0A3BEB4460B64F15D6E140DCA386 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41D551E1182B19D9713B6B6DA9FADA92 /* Pods-ClimateControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1061D7B3E310DC364D54AA50344E691 /* Pods-ClimateControl-dummy.m */; };
 		4C21FBD6150F7CC20C37BEFBC6AB608A /* Pods-ClimateControlUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0448515557763E0B1F39526F9643DDC /* Pods-ClimateControlUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F2043BDCBF8C68BE55BADD5E076AFCB /* Pods-ClimateControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BC237966EDCB44D5C7B14E0D0747B0 /* Pods-ClimateControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B8345DA6BF6CA74CE82789ECEB63D3E /* ClimateWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9296465641068EE94E4D2900570816 /* ClimateWebViewController.swift */; };
-		5D052E88742488BF8DC59B8646D9DBAF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5E4DDCA2E4B08F62F47683EA6521B /* Media.xcassets */; };
-		63B4129A58EA1E8D7AC6C8D7610C4D80 /* LoginWithClimate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE3C18A0A0575ECD5D8C3728E3DB59C /* LoginWithClimate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8345DA6BF6CA74CE82789ECEB63D3E /* ClimateWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DCAD5A714797F8114AD61AA5ACE93 /* ClimateWebViewController.swift */; };
+		5D052E88742488BF8DC59B8646D9DBAF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C3276FACE1302794DC8545078194 /* Media.xcassets */; };
+		6399CF3672F69ADEF27ABB140E189D9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		63B4129A58EA1E8D7AC6C8D7610C4D80 /* LoginWithClimate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BBBC07498F17FFCC214193373986790 /* LoginWithClimate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EF57BBA07F2BA535226D5D9E454E98 /* Pods-ClimateControlUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A6F6802982E8AAB35D88268DC99D02 /* Pods-ClimateControlUITests-dummy.m */; };
-		7E87B82DF438208FB316562D09D3C8B2 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED09080DCC44E1FE312658172DDD853C /* SwiftyJSON-dummy.m */; };
-		98E02D278B162E825DC5D8BA39C409A5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3A8D65832D63971C3865CD290827EE /* UserInfo.swift */; };
-		9BFA3477329D24A482456AB6868744C9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F26D33AB5C94564420D6F33C547F9 /* SwiftyJSON.swift */; };
-		9CBD45B12FC9EF9354A950CFD2C5E96C /* BMCustomTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9896BE7455020AB8ED9819356A9D20 /* BMCustomTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1EB6148A802B748439A6F0A2BC99515 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		7675E7B37E1EC0DC410B5EF905EF3F50 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5BC1AE5020A76E4E3640F139BED504 /* SwiftyJSON.swift */; };
+		8461589EE6B8ABEFB47E4ED22BECB911 /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EB8529F0655E1D0CCCF65861A165B /* Hue.swift */; };
+		97CA5F7ED3A77AD4F79B3A9CC380FB98 /* Pods-ClimateControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BC237966EDCB44D5C7B14E0D0747B0 /* Pods-ClimateControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98E02D278B162E825DC5D8BA39C409A5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B17A8397CE960C0E608C5C16A59707 /* UserInfo.swift */; };
+		9CBD45B12FC9EF9354A950CFD2C5E96C /* BMCustomTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49056216ABB1A4FC863F6EDB5C92ABDB /* BMCustomTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DB43E7F6AA52951515580F6DF0C6547 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F5C8261304303FD70A68799F40DF1D /* RandomColor.swift */; };
+		B3EBB00A5A8D616501754154B177EEB7 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 284EB2E960FD8C544849A6B6ECA82B68 /* SwiftyJSON-dummy.m */; };
+		B82ADAEAA2ECE5BCF52132AB781F2915 /* Luminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB64B719B4388B50E68ACF618EF21BB /* Luminosity.swift */; };
+		BC31A3BD4659A1AAD8A841D711167C2A /* RandomColorSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 959381D0B8E0D284A52CE56C9744FE98 /* RandomColorSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB99A660AFE4E238F7668C49BE4A774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C26F8D6E3FA76DF941826D329209CF47 /* LoginWithClimate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4F183DA0B432A6A9700CB6A33ECC11F /* LoginWithClimate.bundle */; };
+		C26F8D6E3FA76DF941826D329209CF47 /* LoginWithClimate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A21032BA17AB0008C3F7818DED4F67CA /* LoginWithClimate.bundle */; };
 		D2F368FAA81FB279D509ED5A72C84446 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D2F8630B1C4EC54A421094C53497FC98 /* LoginWithClimateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D23972E5110E42829C357CE3B9A71 /* LoginWithClimateButton.swift */; };
-		E53DB31B834923DCE82A1EA5502282B3 /* OIDC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5897690323E050BBD57D5C9AE814C /* OIDC.swift */; };
-		EC533A3C5A76BDE71A854549741AC821 /* BMCustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9962379FFCB1820D085D29F53F81AB4E /* BMCustomTableView.swift */; };
-		FF43FA03C5EC5F87217026A1038E6654 /* LoginWithClimate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BB6FC0941F0E17205397DF05466D7 /* LoginWithClimate-dummy.m */; };
+		D2F8630B1C4EC54A421094C53497FC98 /* LoginWithClimateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78059105A2A57DA0F037936858DCA8AD /* LoginWithClimateButton.swift */; };
+		D55FC6178F1900CB0C67F58A28B3ABFE /* RandomColorSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD85AFE407237FC92D81789DE9FFDC9 /* RandomColorSwift-dummy.m */; };
+		E2C4DC9FB4D437FB4E77AA41A11075C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		E53DB31B834923DCE82A1EA5502282B3 /* OIDC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CBC463FA205B78F06B831F27C9DA0 /* OIDC.swift */; };
+		EC533A3C5A76BDE71A854549741AC821 /* BMCustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E287E4051DE34D66094D9E73F3B5A1A /* BMCustomTableView.swift */; };
+		FC1D9F01153DBBABF8923E1C66F4960C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		FF43FA03C5EC5F87217026A1038E6654 /* LoginWithClimate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 100536F695F690D85048233D64CEE12B /* LoginWithClimate-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1541A9F4C209200CA533B2648A73F7B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6DC4437F0FFEE0055694E0D01AC13A5;
+			remoteInfo = BMCustomTableView;
+		};
 		4146AFAD7FA6D7E0A53E852CEA5A6450 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 70926CC9332294CC4FFD64EAA6CD1464;
+			remoteGlobalIDString = 237BC3E53C971EA0BE3300FA8EBF5B09;
 			remoteInfo = SwiftyJSON;
 		};
 		4C086C1703DB49B3A5C110BB0DD552BD /* PBXContainerItemProxy */ = {
@@ -50,19 +64,12 @@
 			remoteGlobalIDString = 3F7A25ADDB1BCD3BB009B6FD664090B0;
 			remoteInfo = "BMCustomTableView-BMCustomTableView";
 		};
-		996B4E5EBAE07BB073B451731CF21C67 /* PBXContainerItemProxy */ = {
+		6F0B8F63D5DF72854EE53ED1AB4CAC6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 70926CC9332294CC4FFD64EAA6CD1464;
-			remoteInfo = SwiftyJSON;
-		};
-		9C66666499EBF8BE96E165505EDE81E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6DC4437F0FFEE0055694E0D01AC13A5;
-			remoteInfo = BMCustomTableView;
+			remoteGlobalIDString = 014E1A56329ADA7E1E5524FEC552D965;
+			remoteInfo = LoginWithClimate;
 		};
 		D31DE7C4EF0584FC86C7FAE6A8F0036D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -71,12 +78,12 @@
 			remoteGlobalIDString = 014E1A56329ADA7E1E5524FEC552D965;
 			remoteInfo = LoginWithClimate;
 		};
-		E082FE67C8B4EFA10368DB39CD91E7F0 /* PBXContainerItemProxy */ = {
+		E3F54463DBBD7FB72F01DAB86E6E245C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 014E1A56329ADA7E1E5524FEC552D965;
-			remoteInfo = LoginWithClimate;
+			remoteGlobalIDString = 237BC3E53C971EA0BE3300FA8EBF5B09;
+			remoteInfo = SwiftyJSON;
 		};
 		F40B639432877E9A7F13D27DD158B07C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -85,75 +92,85 @@
 			remoteGlobalIDString = AA03234BEBC3FE82C4684B270DFD0764;
 			remoteInfo = "LoginWithClimate-LoginWithClimate";
 		};
+		FCBAB83B20B4118717F02AB836D59EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E031F21F8BB2C4C5C72A9B09723B3E84;
+			remoteInfo = RandomColorSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E637D2E0E267AE10A0F6611450BC92 /* BMCustomTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCustomTableView.xcconfig; sourceTree = "<group>"; };
 		0329F3F821396F8B1C00010ADC429500 /* Pods-ClimateControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControl.release.xcconfig"; sourceTree = "<group>"; };
-		075735DFEEDE8FD33D965446DF009082 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		059CBC463FA205B78F06B831F27C9DA0 /* OIDC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OIDC.swift; path = Pod/Classes/OIDC.swift; sourceTree = "<group>"; };
 		0FBBD3B1F2211A5B0F7D655A382C8BC5 /* Pods-ClimateControl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControl-frameworks.sh"; sourceTree = "<group>"; };
-		129A51AA3FA3BAEE1DFC86067EC5C787 /* BMCustomTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCustomTableView-prefix.pch"; sourceTree = "<group>"; };
-		17E5E4DDCA2E4B08F62F47683EA6521B /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Pod/Resources/Media.xcassets; sourceTree = "<group>"; };
+		100536F695F690D85048233D64CEE12B /* LoginWithClimate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoginWithClimate-dummy.m"; sourceTree = "<group>"; };
+		10FC347C3B12012E7593116C1AE7ECBF /* LoginWithClimate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginWithClimate-prefix.pch"; sourceTree = "<group>"; };
 		19E67FA329CAD53754E804F420544F47 /* Pods-ClimateControlUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControlUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1ECD35667EA1E23295DC24707BC09957 /* Pods_ClimateControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9B0A3BEB4460B64F15D6E140DCA386 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		23337C6B619070BD5E9D51B37EFC1D27 /* Pods-ClimateControlUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ClimateControlUITests.modulemap"; sourceTree = "<group>"; };
-		2826E9B16506CA4E02A91CA1074A8645 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29B7412E759FBCAB47240D1D4F821B1E /* LoginWithClimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginWithClimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C9296465641068EE94E4D2900570816 /* ClimateWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClimateWebViewController.swift; path = Pod/Classes/ClimateWebViewController.swift; sourceTree = "<group>"; };
-		2F21490C5A1CBBDF3858FB609DD34921 /* LoginWithClimate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginWithClimate.xcconfig; sourceTree = "<group>"; };
-		30ED33C18ADB830F3A8DF38768B6489E /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		384D46D44E8BC1CF1CC843C78129B019 /* Pods_ClimateControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C240C2BFC1C5D41487D50CAC7C13ECA /* LoginWithClimate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginWithClimate-prefix.pch"; sourceTree = "<group>"; };
+		276E779C23CC18C3AB5D0A873ACA1940 /* ColorDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorDefinition.swift; path = RandomColor/ColorDefinition.swift; sourceTree = "<group>"; };
+		284EB2E960FD8C544849A6B6ECA82B68 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		35383ABBA631DD4ADF41673E6F642B0B /* BMCustomTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMCustomTableView.modulemap; sourceTree = "<group>"; };
+		3CE2C3276FACE1302794DC8545078194 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Pod/Resources/Media.xcassets; sourceTree = "<group>"; };
+		3DB64B719B4388B50E68ACF618EF21BB /* Luminosity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Luminosity.swift; path = RandomColor/Luminosity.swift; sourceTree = "<group>"; };
+		3E287E4051DE34D66094D9E73F3B5A1A /* BMCustomTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCustomTableView.swift; path = Pod/Classes/BMCustomTableView.swift; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43DA35EE445FCA9081AA1F3279CBA2DA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		445EB8529F0655E1D0CCCF65861A165B /* Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hue.swift; path = RandomColor/Hue.swift; sourceTree = "<group>"; };
 		4619A68D2DBAE37B5E2E0557F8AC0F04 /* Pods-ClimateControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4E442C8C9DBEFEDFD45651924EF6A294 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		5A9896BE7455020AB8ED9819356A9D20 /* BMCustomTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCustomTableView-umbrella.h"; sourceTree = "<group>"; };
-		62BDFD9F3E85650E942E4E89D8C0CD31 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464A638F61B37BF3EFB6AEFA8141AC60 /* RandomColorSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RandomColorSwift.modulemap; sourceTree = "<group>"; };
+		48E1553959BFB6258D3624E89EE52885 /* RandomColorSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RandomColorSwift.xcconfig; sourceTree = "<group>"; };
+		49056216ABB1A4FC863F6EDB5C92ABDB /* BMCustomTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCustomTableView-umbrella.h"; sourceTree = "<group>"; };
+		4BBBC07498F17FFCC214193373986790 /* LoginWithClimate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginWithClimate-umbrella.h"; sourceTree = "<group>"; };
+		4EB7B73FC5F659A884CAA967BB59D749 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		547DAB52E1914A7F3CC186C862917A32 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		56B17A8397CE960C0E608C5C16A59707 /* UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Pod/Classes/UserInfo.swift; sourceTree = "<group>"; };
+		5A8E0B74999B954580F1D8F0E6D30BA8 /* BMCustomTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMCustomTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		678C339586C565E7C30B56AE878638C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E80A5EECA56B85C1D7BF992FAC3AFE5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		6BE237E909D9D2D3C6DC1413F6DB4279 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E291106AC56E0D9735CCDBD1F5D2E83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74A149BD6A5CEAF8E618A7F7048011CF /* LoginWithClimate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoginWithClimate.modulemap; sourceTree = "<group>"; };
+		78059105A2A57DA0F037936858DCA8AD /* LoginWithClimateButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginWithClimateButton.swift; path = Pod/Classes/LoginWithClimateButton.swift; sourceTree = "<group>"; };
+		7F2F2988B89CEB17097F49ECA15B94AC /* BMCustomTableView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMCustomTableView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A9FAEA19D2B7FA9AD2B3E6E9E7C10B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F5C8261304303FD70A68799F40DF1D /* RandomColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomColor.swift; path = RandomColor/RandomColor.swift; sourceTree = "<group>"; };
 		83FD141B746DA882D0D2C4339A61D495 /* Pods-ClimateControl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClimateControl-acknowledgements.plist"; sourceTree = "<group>"; };
+		841DCAD5A714797F8114AD61AA5ACE93 /* ClimateWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClimateWebViewController.swift; path = Pod/Classes/ClimateWebViewController.swift; sourceTree = "<group>"; };
 		88BC237966EDCB44D5C7B14E0D0747B0 /* Pods-ClimateControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClimateControl-umbrella.h"; sourceTree = "<group>"; };
 		8A50AA7094ABC280DB540DD8E2875B9C /* Pods-ClimateControlUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClimateControlUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8CDB9F29934B18715CA7FEF089914610 /* Login.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Pod/Resources/Login.storyboard; sourceTree = "<group>"; };
-		9135A86472853701E98F0465A6873EC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5BC1AE5020A76E4E3640F139BED504 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		901AC5F51BFF0A84236917B5FA9563E6 /* Pods_ClimateControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B63A3B9EED74FFDB3343B3CFAFCBC9 /* RandomColorSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RandomColorSwift-prefix.pch"; sourceTree = "<group>"; };
+		959381D0B8E0D284A52CE56C9744FE98 /* RandomColorSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RandomColorSwift-umbrella.h"; sourceTree = "<group>"; };
 		96E3A13673DCCA624504A67DDE3DE025 /* Pods-ClimateControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControl.debug.xcconfig"; sourceTree = "<group>"; };
-		9962379FFCB1820D085D29F53F81AB4E /* BMCustomTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCustomTableView.swift; path = Pod/Classes/BMCustomTableView.swift; sourceTree = "<group>"; };
-		9A3F26D33AB5C94564420D6F33C547F9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		A1061D7B3E310DC364D54AA50344E691 /* Pods-ClimateControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClimateControl-dummy.m"; sourceTree = "<group>"; };
+		A1106AC0B265EFFCB985F9FF4D4B3C17 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A21032BA17AB0008C3F7818DED4F67CA /* LoginWithClimate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithClimate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45F66CBDB2326DD413AA12F771C9581 /* Pods-ClimateControl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControl-resources.sh"; sourceTree = "<group>"; };
-		ADED53BB4D52C93DC6F874C1E4EB5C5A /* Pods_ClimateControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B63BB6FC0941F0E17205397DF05466D7 /* LoginWithClimate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoginWithClimate-dummy.m"; sourceTree = "<group>"; };
-		B97EE463F42F482BEE7D3CF68AF4F238 /* BMCustomTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMCustomTableView.modulemap; sourceTree = "<group>"; };
+		A8CDF21EAB86C063C8E6874DCC489EA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADACEBD301BC544560D5B06EA8DDF349 /* Login.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Pod/Resources/Login.storyboard; sourceTree = "<group>"; };
+		B753AC266E8B837657DCDB43FEF96E70 /* LoginWithClimate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginWithClimate.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB3A8D65832D63971C3865CD290827EE /* UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Pod/Classes/UserInfo.swift; sourceTree = "<group>"; };
-		BF3DB69D1E76977498A287A45961194D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C25B1F2392530843EE755983A637CA4E /* LoginWithClimate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoginWithClimate.modulemap; sourceTree = "<group>"; };
 		C6E7560D21E0243542334505B0FA77BE /* Pods-ClimateControlUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClimateControlUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CD9FC925C6230097FB2D1A826E7485A8 /* BMCustomTableView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMCustomTableView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC24982786BE15B4D86B538656C04690 /* BMCustomTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCustomTableView-prefix.pch"; sourceTree = "<group>"; };
 		CDC3D5884A106BD04C225607C724F08A /* Pods-ClimateControl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClimateControl-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CE83B4B8113A97B8B4EFC013DB4DDBD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF33731E608974AA49DF69D2B05ECFCC /* LoginWithClimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginWithClimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082365F3DAF1106F64021084875CB24 /* Pods-ClimateControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClimateControlUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7A6F6802982E8AAB35D88268DC99D02 /* Pods-ClimateControlUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClimateControlUITests-dummy.m"; sourceTree = "<group>"; };
+		DCB3E2709EEE8D4DEA374A64EB5BD2AB /* BMCustomTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMCustomTableView-dummy.m"; sourceTree = "<group>"; };
+		DDD85AFE407237FC92D81789DE9FFDC9 /* RandomColorSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RandomColorSwift-dummy.m"; sourceTree = "<group>"; };
 		E0448515557763E0B1F39526F9643DDC /* Pods-ClimateControlUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClimateControlUITests-umbrella.h"; sourceTree = "<group>"; };
 		E0E4A05DFEF7F16A918EBFDC31CA531C /* Pods-ClimateControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ClimateControl.modulemap"; sourceTree = "<group>"; };
-		E4F183DA0B432A6A9700CB6A33ECC11F /* LoginWithClimate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithClimate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D59340CC932EE3E3497DE5D9336457 /* Pods-ClimateControlUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClimateControlUITests-resources.sh"; sourceTree = "<group>"; };
-		EBE3C18A0A0575ECD5D8C3728E3DB59C /* LoginWithClimate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginWithClimate-umbrella.h"; sourceTree = "<group>"; };
-		ED09080DCC44E1FE312658172DDD853C /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		EE7D23972E5110E42829C357CE3B9A71 /* LoginWithClimateButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginWithClimateButton.swift; path = Pod/Classes/LoginWithClimateButton.swift; sourceTree = "<group>"; };
-		F625A54FAF06E971E456929485CC96A3 /* BMCustomTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMCustomTableView-dummy.m"; sourceTree = "<group>"; };
-		FEC4E871EF36ED3BD77CE1EDF4D30796 /* BMCustomTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMCustomTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF5897690323E050BBD57D5C9AE814C /* OIDC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OIDC.swift; path = Pod/Classes/OIDC.swift; sourceTree = "<group>"; };
+		EC4282FF79440490537F362C9AC452F5 /* BMCustomTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCustomTableView.xcconfig; sourceTree = "<group>"; };
+		F6687646E14F3F8FB48B0BEF27BBBEAD /* RandomColorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomColorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FFBD5B2280B65AFDF7BF284EC58BA81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4236C91444059A4893A046C9BBA0D2F3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2BDAD3544831139E276A81C26718CB2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,14 +193,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		833731E307E1169C4B8F2196C7697860 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1EB6148A802B748439A6F0A2BC99515 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8A3C4FD92E9BF9D29F07170D3380A478 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,16 +209,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DEAF8A6B2301896FD55C0222EE5C934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C4DC9FB4D437FB4E77AA41A11075C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3DA93804692AF8C031B35A45BF8DF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1D9F01153DBBABF8923E1C66F4960C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC48F6A90DDCD6340096D5DD69866A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6399CF3672F69ADEF27ABB140E189D9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13D21257A90B70D75AE23FA6D3F65AC0 /* SwiftyJSON */ = {
+		0408E0F627FB3B647DC0941D07D7E94F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A3F26D33AB5C94564420D6F33C547F9 /* SwiftyJSON.swift */,
-				9200D39ACAAACD3B6D0E32564B9ABB7F /* Support Files */,
+				A8CDF21EAB86C063C8E6874DCC489EA1 /* Info.plist */,
+				74A149BD6A5CEAF8E618A7F7048011CF /* LoginWithClimate.modulemap */,
+				B753AC266E8B837657DCDB43FEF96E70 /* LoginWithClimate.xcconfig */,
+				100536F695F690D85048233D64CEE12B /* LoginWithClimate-dummy.m */,
+				10FC347C3B12012E7593116C1AE7ECBF /* LoginWithClimate-prefix.pch */,
+				4BBBC07498F17FFCC214193373986790 /* LoginWithClimate-umbrella.h */,
 			);
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/LoginWithClimate";
 			sourceTree = "<group>";
 		};
 		1F2F34098EA3D3F89DE901BCDF38E2B2 /* Pods-ClimateControl */ = {
@@ -230,15 +268,40 @@
 			path = "Target Support Files/Pods-ClimateControl";
 			sourceTree = "<group>";
 		};
-		23B78190D07E9842E5D3B4BA9B7D8891 /* LoginWithClimate */ = {
+		2371E44921FE8A0900648914FE34D14C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2C9296465641068EE94E4D2900570816 /* ClimateWebViewController.swift */,
-				EE7D23972E5110E42829C357CE3B9A71 /* LoginWithClimateButton.swift */,
-				FEF5897690323E050BBD57D5C9AE814C /* OIDC.swift */,
-				BB3A8D65832D63971C3865CD290827EE /* UserInfo.swift */,
-				E998CFE323C62F6FF8600FF1239A0975 /* Resources */,
-				79B69E7473028CF3FB9DBE750FA28047 /* Support Files */,
+				6BE237E909D9D2D3C6DC1413F6DB4279 /* Info.plist */,
+				A1106AC0B265EFFCB985F9FF4D4B3C17 /* SwiftyJSON.modulemap */,
+				4EB7B73FC5F659A884CAA967BB59D749 /* SwiftyJSON.xcconfig */,
+				284EB2E960FD8C544849A6B6ECA82B68 /* SwiftyJSON-dummy.m */,
+				547DAB52E1914A7F3CC186C862917A32 /* SwiftyJSON-prefix.pch */,
+				1F9B0A3BEB4460B64F15D6E140DCA386 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		2F4E768E850430D03ED9259ED972F859 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D064E6B215F520B0F274D3411A8D20E /* BMCustomTableView */,
+				3D284D4824F0D134C4C93C9168796393 /* LoginWithClimate */,
+				9AB3B56FA0BE905A32199308FD1B4846 /* RandomColorSwift */,
+				9C1390E4EDB9FDF1667E1C509D858A3F /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D284D4824F0D134C4C93C9168796393 /* LoginWithClimate */ = {
+			isa = PBXGroup;
+			children = (
+				841DCAD5A714797F8114AD61AA5ACE93 /* ClimateWebViewController.swift */,
+				78059105A2A57DA0F037936858DCA8AD /* LoginWithClimateButton.swift */,
+				059CBC463FA205B78F06B831F27C9DA0 /* OIDC.swift */,
+				56B17A8397CE960C0E608C5C16A59707 /* UserInfo.swift */,
+				8FCA6ACAB660EA2CC142B0DBA0857838 /* Resources */,
+				0408E0F627FB3B647DC0941D07D7E94F /* Support Files */,
 			);
 			path = LoginWithClimate;
 			sourceTree = "<group>";
@@ -261,32 +324,41 @@
 			path = "Target Support Files/Pods-ClimateControlUITests";
 			sourceTree = "<group>";
 		};
-		6C292FE49433AB37726A8A7D32A7C13B /* Support Files */ = {
+		4DFBCBCF0CB8B92FB7259EB08CC13449 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B97EE463F42F482BEE7D3CF68AF4F238 /* BMCustomTableView.modulemap */,
-				00E637D2E0E267AE10A0F6611450BC92 /* BMCustomTableView.xcconfig */,
-				F625A54FAF06E971E456929485CC96A3 /* BMCustomTableView-dummy.m */,
-				129A51AA3FA3BAEE1DFC86067EC5C787 /* BMCustomTableView-prefix.pch */,
-				5A9896BE7455020AB8ED9819356A9D20 /* BMCustomTableView-umbrella.h */,
-				62BDFD9F3E85650E942E4E89D8C0CD31 /* Info.plist */,
+				80A9FAEA19D2B7FA9AD2B3E6E9E7C10B /* Info.plist */,
+				464A638F61B37BF3EFB6AEFA8141AC60 /* RandomColorSwift.modulemap */,
+				48E1553959BFB6258D3624E89EE52885 /* RandomColorSwift.xcconfig */,
+				DDD85AFE407237FC92D81789DE9FFDC9 /* RandomColorSwift-dummy.m */,
+				90B63A3B9EED74FFDB3343B3CFAFCBC9 /* RandomColorSwift-prefix.pch */,
+				959381D0B8E0D284A52CE56C9744FE98 /* RandomColorSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RandomColorSwift";
+			sourceTree = "<group>";
+		};
+		56DABC234C4842116B15085D5CDEF6ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35383ABBA631DD4ADF41673E6F642B0B /* BMCustomTableView.modulemap */,
+				EC4282FF79440490537F362C9AC452F5 /* BMCustomTableView.xcconfig */,
+				DCB3E2709EEE8D4DEA374A64EB5BD2AB /* BMCustomTableView-dummy.m */,
+				CC24982786BE15B4D86B538656C04690 /* BMCustomTableView-prefix.pch */,
+				49056216ABB1A4FC863F6EDB5C92ABDB /* BMCustomTableView-umbrella.h */,
+				6E291106AC56E0D9735CCDBD1F5D2E83 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BMCustomTableView";
 			sourceTree = "<group>";
 		};
-		79B69E7473028CF3FB9DBE750FA28047 /* Support Files */ = {
+		5D064E6B215F520B0F274D3411A8D20E /* BMCustomTableView */ = {
 			isa = PBXGroup;
 			children = (
-				2826E9B16506CA4E02A91CA1074A8645 /* Info.plist */,
-				C25B1F2392530843EE755983A637CA4E /* LoginWithClimate.modulemap */,
-				2F21490C5A1CBBDF3858FB609DD34921 /* LoginWithClimate.xcconfig */,
-				B63BB6FC0941F0E17205397DF05466D7 /* LoginWithClimate-dummy.m */,
-				3C240C2BFC1C5D41487D50CAC7C13ECA /* LoginWithClimate-prefix.pch */,
-				EBE3C18A0A0575ECD5D8C3728E3DB59C /* LoginWithClimate-umbrella.h */,
+				3E287E4051DE34D66094D9E73F3B5A1A /* BMCustomTableView.swift */,
+				56DABC234C4842116B15085D5CDEF6ED /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/LoginWithClimate";
+			path = BMCustomTableView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -294,43 +366,34 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8C8936BEB99257D37CAAA2F7CB156FC9 /* Pods */,
-				FC3B8DACB82C9B3D82D9EC67408641DF /* Products */,
+				2F4E768E850430D03ED9259ED972F859 /* Pods */,
+				90C056B6C73EC74BA48DC24EC2895C83 /* Products */,
 				9A990A6F96B42A5F3027C623B23DA566 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85915F721952F518ECCB3542889CEB2C /* BMCustomTableView */ = {
+		8FCA6ACAB660EA2CC142B0DBA0857838 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9962379FFCB1820D085D29F53F81AB4E /* BMCustomTableView.swift */,
-				6C292FE49433AB37726A8A7D32A7C13B /* Support Files */,
+				ADACEBD301BC544560D5B06EA8DDF349 /* Login.storyboard */,
+				3CE2C3276FACE1302794DC8545078194 /* Media.xcassets */,
 			);
-			path = BMCustomTableView;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		8C8936BEB99257D37CAAA2F7CB156FC9 /* Pods */ = {
+		90C056B6C73EC74BA48DC24EC2895C83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85915F721952F518ECCB3542889CEB2C /* BMCustomTableView */,
-				23B78190D07E9842E5D3B4BA9B7D8891 /* LoginWithClimate */,
-				13D21257A90B70D75AE23FA6D3F65AC0 /* SwiftyJSON */,
+				7F2F2988B89CEB17097F49ECA15B94AC /* BMCustomTableView.bundle */,
+				5A8E0B74999B954580F1D8F0E6D30BA8 /* BMCustomTableView.framework */,
+				A21032BA17AB0008C3F7818DED4F67CA /* LoginWithClimate.bundle */,
+				CF33731E608974AA49DF69D2B05ECFCC /* LoginWithClimate.framework */,
+				1ECD35667EA1E23295DC24707BC09957 /* Pods_ClimateControl.framework */,
+				901AC5F51BFF0A84236917B5FA9563E6 /* Pods_ClimateControlUITests.framework */,
+				F6687646E14F3F8FB48B0BEF27BBBEAD /* RandomColorSwift.framework */,
+				43DA35EE445FCA9081AA1F3279CBA2DA /* SwiftyJSON.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9200D39ACAAACD3B6D0E32564B9ABB7F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9135A86472853701E98F0465A6873EC9 /* Info.plist */,
-				7E80A5EECA56B85C1D7BF992FAC3AFE5 /* SwiftyJSON.modulemap */,
-				4E442C8C9DBEFEDFD45651924EF6A294 /* SwiftyJSON.xcconfig */,
-				ED09080DCC44E1FE312658172DDD853C /* SwiftyJSON-dummy.m */,
-				30ED33C18ADB830F3A8DF38768B6489E /* SwiftyJSON-prefix.pch */,
-				075735DFEEDE8FD33D965446DF009082 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9A990A6F96B42A5F3027C623B23DA566 /* Targets Support Files */ = {
@@ -340,6 +403,27 @@
 				422412C5B29D3241723F3D560C4E39A8 /* Pods-ClimateControlUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9AB3B56FA0BE905A32199308FD1B4846 /* RandomColorSwift */ = {
+			isa = PBXGroup;
+			children = (
+				276E779C23CC18C3AB5D0A873ACA1940 /* ColorDefinition.swift */,
+				445EB8529F0655E1D0CCCF65861A165B /* Hue.swift */,
+				3DB64B719B4388B50E68ACF618EF21BB /* Luminosity.swift */,
+				83F5C8261304303FD70A68799F40DF1D /* RandomColor.swift */,
+				4DFBCBCF0CB8B92FB7259EB08CC13449 /* Support Files */,
+			);
+			path = RandomColorSwift;
+			sourceTree = "<group>";
+		};
+		9C1390E4EDB9FDF1667E1C509D858A3F /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				8B5BC1AE5020A76E4E3640F139BED504 /* SwiftyJSON.swift */,
+				2371E44921FE8A0900648914FE34D14C /* Support Files */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -358,37 +442,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E998CFE323C62F6FF8600FF1239A0975 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8CDB9F29934B18715CA7FEF089914610 /* Login.storyboard */,
-				17E5E4DDCA2E4B08F62F47683EA6521B /* Media.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		FC3B8DACB82C9B3D82D9EC67408641DF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CD9FC925C6230097FB2D1A826E7485A8 /* BMCustomTableView.bundle */,
-				FEC4E871EF36ED3BD77CE1EDF4D30796 /* BMCustomTableView.framework */,
-				E4F183DA0B432A6A9700CB6A33ECC11F /* LoginWithClimate.bundle */,
-				29B7412E759FBCAB47240D1D4F821B1E /* LoginWithClimate.framework */,
-				384D46D44E8BC1CF1CC843C78129B019 /* Pods_ClimateControl.framework */,
-				ADED53BB4D52C93DC6F874C1E4EB5C5A /* Pods_ClimateControlUITests.framework */,
-				BF3DB69D1E76977498A287A45961194D /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		965D1677F31E7F5A034C1F3C2BE07C66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC31A3BD4659A1AAD8A841D711167C2A /* RandomColorSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E918A6F52B5B0515A609D6CAE95CAF1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4C21FBD6150F7CC20C37BEFBC6AB608A /* Pods-ClimateControlUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06749E44B0B2B2D1F2F61D05E4945FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97CA5F7ED3A77AD4F79B3A9CC380FB98 /* Pods-ClimateControl-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,19 +485,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDFF610848FB3694EAA686652F903677 /* Headers */ = {
+		C342F87E69D455EA440A20203C048A8A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A43BB0A7E49F9744E21FF475DB5281C /* SwiftyJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC4078BBDFAC771F815B05937C03E7BD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F2043BDCBF8C68BE55BADD5E076AFCB /* Pods-ClimateControl-umbrella.h in Headers */,
+				3D5BD641D155CC2B0DBCE2C7E522CA25 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +512,24 @@
 			);
 			name = LoginWithClimate;
 			productName = LoginWithClimate;
-			productReference = 29B7412E759FBCAB47240D1D4F821B1E /* LoginWithClimate.framework */;
+			productReference = CF33731E608974AA49DF69D2B05ECFCC /* LoginWithClimate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		237BC3E53C971EA0BE3300FA8EBF5B09 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490C4045BAA86F4AB9CB549C92E5583C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				5E81D7F8F1DAB40CA0D18173BBA99797 /* Sources */,
+				FC48F6A90DDCD6340096D5DD69866A76 /* Frameworks */,
+				C342F87E69D455EA440A20203C048A8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 43DA35EE445FCA9081AA1F3279CBA2DA /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3F7A25ADDB1BCD3BB009B6FD664090B0 /* BMCustomTableView-BMCustomTableView */ = {
@@ -460,24 +546,28 @@
 			);
 			name = "BMCustomTableView-BMCustomTableView";
 			productName = "BMCustomTableView-BMCustomTableView";
-			productReference = CD9FC925C6230097FB2D1A826E7485A8 /* BMCustomTableView.bundle */;
+			productReference = 7F2F2988B89CEB17097F49ECA15B94AC /* BMCustomTableView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		70926CC9332294CC4FFD64EAA6CD1464 /* SwiftyJSON */ = {
+		6C8B42084FA74F1633439369D77D311D /* Pods-ClimateControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80B9A2D39ED6E57FB4094D7993362BE8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = A27F79E75EFCEEEA1DE0E999866559B6 /* Build configuration list for PBXNativeTarget "Pods-ClimateControl" */;
 			buildPhases = (
-				EF8E39CB8F3BA0E7C2944DBDB92C57F7 /* Sources */,
-				1FFBD5B2280B65AFDF7BF284EC58BA81 /* Frameworks */,
-				CDFF610848FB3694EAA686652F903677 /* Headers */,
+				1CBF1175784DEEDCF359EA9CBDDB0D36 /* Sources */,
+				9DEAF8A6B2301896FD55C0222EE5C934 /* Frameworks */,
+				A06749E44B0B2B2D1F2F61D05E4945FE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F8E42C5F4DB102A507ECFF299951F60 /* PBXTargetDependency */,
+				359DB2700D3BB4DB761E7BE949FF05A5 /* PBXTargetDependency */,
+				D8F5685CF1E381AC136E1D23BCDE2B6B /* PBXTargetDependency */,
+				2BDBB3E2BFCF5EA219FECE4B10C89534 /* PBXTargetDependency */,
 			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = BF3DB69D1E76977498A287A45961194D /* SwiftyJSON.framework */;
+			name = "Pods-ClimateControl";
+			productName = "Pods-ClimateControl";
+			productReference = 1ECD35667EA1E23295DC24707BC09957 /* Pods_ClimateControl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AA03234BEBC3FE82C4684B270DFD0764 /* LoginWithClimate-LoginWithClimate */ = {
@@ -494,7 +584,7 @@
 			);
 			name = "LoginWithClimate-LoginWithClimate";
 			productName = "LoginWithClimate-LoginWithClimate";
-			productReference = E4F183DA0B432A6A9700CB6A33ECC11F /* LoginWithClimate.bundle */;
+			productReference = A21032BA17AB0008C3F7818DED4F67CA /* LoginWithClimate.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		B6DC4437F0FFEE0055694E0D01AC13A5 /* BMCustomTableView */ = {
@@ -513,27 +603,24 @@
 			);
 			name = BMCustomTableView;
 			productName = BMCustomTableView;
-			productReference = FEC4E871EF36ED3BD77CE1EDF4D30796 /* BMCustomTableView.framework */;
+			productReference = 5A8E0B74999B954580F1D8F0E6D30BA8 /* BMCustomTableView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D6DA9BB3E7E7870BE0FB9CD68170C2A5 /* Pods-ClimateControl */ = {
+		E031F21F8BB2C4C5C72A9B09723B3E84 /* RandomColorSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1973FCEB23E657535F9DDB5F91509844 /* Build configuration list for PBXNativeTarget "Pods-ClimateControl" */;
+			buildConfigurationList = 3AA0216FAA3DFA96244EBACFC56DA4E1 /* Build configuration list for PBXNativeTarget "RandomColorSwift" */;
 			buildPhases = (
-				B43C2CB379D115B9EADBB24BEB9C8FEB /* Sources */,
-				833731E307E1169C4B8F2196C7697860 /* Frameworks */,
-				DC4078BBDFAC771F815B05937C03E7BD /* Headers */,
+				8DCCCE8A184BECDA72E858741581F1D4 /* Sources */,
+				A3DA93804692AF8C031B35A45BF8DF57 /* Frameworks */,
+				965D1677F31E7F5A034C1F3C2BE07C66 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9646B725F54757B5BCD48F91A8D61FC1 /* PBXTargetDependency */,
-				373F09BAB92A91FC373E8E232491425C /* PBXTargetDependency */,
-				FF51BAC806476326DE6C7B37463B56D6 /* PBXTargetDependency */,
 			);
-			name = "Pods-ClimateControl";
-			productName = "Pods-ClimateControl";
-			productReference = 384D46D44E8BC1CF1CC843C78129B019 /* Pods_ClimateControl.framework */;
+			name = RandomColorSwift;
+			productName = RandomColorSwift;
+			productReference = F6687646E14F3F8FB48B0BEF27BBBEAD /* RandomColorSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E2F723ACA06F07D7BCDD9F44D3B47021 /* Pods-ClimateControlUITests */ = {
@@ -552,7 +639,7 @@
 			);
 			name = "Pods-ClimateControlUITests";
 			productName = "Pods-ClimateControlUITests";
-			productReference = ADED53BB4D52C93DC6F874C1E4EB5C5A /* Pods_ClimateControlUITests.framework */;
+			productReference = 901AC5F51BFF0A84236917B5FA9563E6 /* Pods_ClimateControlUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -572,7 +659,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FC3B8DACB82C9B3D82D9EC67408641DF /* Products */;
+			productRefGroup = 90C056B6C73EC74BA48DC24EC2895C83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -580,9 +667,10 @@
 				3F7A25ADDB1BCD3BB009B6FD664090B0 /* BMCustomTableView-BMCustomTableView */,
 				014E1A56329ADA7E1E5524FEC552D965 /* LoginWithClimate */,
 				AA03234BEBC3FE82C4684B270DFD0764 /* LoginWithClimate-LoginWithClimate */,
-				D6DA9BB3E7E7870BE0FB9CD68170C2A5 /* Pods-ClimateControl */,
+				6C8B42084FA74F1633439369D77D311D /* Pods-ClimateControl */,
 				E2F723ACA06F07D7BCDD9F44D3B47021 /* Pods-ClimateControlUITests */,
-				70926CC9332294CC4FFD64EAA6CD1464 /* SwiftyJSON */,
+				E031F21F8BB2C4C5C72A9B09723B3E84 /* RandomColorSwift */,
+				237BC3E53C971EA0BE3300FA8EBF5B09 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -631,6 +719,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CBF1175784DEEDCF359EA9CBDDB0D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D551E1182B19D9713B6B6DA9FADA92 /* Pods-ClimateControl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E81D7F8F1DAB40CA0D18173BBA99797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EBB00A5A8D616501754154B177EEB7 /* SwiftyJSON-dummy.m in Sources */,
+				7675E7B37E1EC0DC410B5EF905EF3F50 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		788A219E4A3F9B6A5285335E85A21314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -640,6 +745,18 @@
 				D2F8630B1C4EC54A421094C53497FC98 /* LoginWithClimateButton.swift in Sources */,
 				E53DB31B834923DCE82A1EA5502282B3 /* OIDC.swift in Sources */,
 				98E02D278B162E825DC5D8BA39C409A5 /* UserInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCCCE8A184BECDA72E858741581F1D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C46DD831B4A72BD8CA99549ACB2F15C /* ColorDefinition.swift in Sources */,
+				8461589EE6B8ABEFB47E4ED22BECB911 /* Hue.swift in Sources */,
+				B82ADAEAA2ECE5BCF52132AB781F2915 /* Luminosity.swift in Sources */,
+				9DB43E7F6AA52951515580F6DF0C6547 /* RandomColor.swift in Sources */,
+				D55FC6178F1900CB0C67F58A28B3ABFE /* RandomColorSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,23 +784,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B43C2CB379D115B9EADBB24BEB9C8FEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				112C366CB8603BDC7575E25CFEBBC6DF /* Pods-ClimateControl-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF8E39CB8F3BA0E7C2944DBDB92C57F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E87B82DF438208FB316562D09D3C8B2 /* SwiftyJSON-dummy.m in Sources */,
-				9BFA3477329D24A482456AB6868744C9 /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -693,11 +793,23 @@
 			target = AA03234BEBC3FE82C4684B270DFD0764 /* LoginWithClimate-LoginWithClimate */;
 			targetProxy = F40B639432877E9A7F13D27DD158B07C /* PBXContainerItemProxy */;
 		};
-		373F09BAB92A91FC373E8E232491425C /* PBXTargetDependency */ = {
+		2BDBB3E2BFCF5EA219FECE4B10C89534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 237BC3E53C971EA0BE3300FA8EBF5B09 /* SwiftyJSON */;
+			targetProxy = E3F54463DBBD7FB72F01DAB86E6E245C /* PBXContainerItemProxy */;
+		};
+		359DB2700D3BB4DB761E7BE949FF05A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LoginWithClimate;
 			target = 014E1A56329ADA7E1E5524FEC552D965 /* LoginWithClimate */;
-			targetProxy = E082FE67C8B4EFA10368DB39CD91E7F0 /* PBXContainerItemProxy */;
+			targetProxy = 6F0B8F63D5DF72854EE53ED1AB4CAC6D /* PBXContainerItemProxy */;
+		};
+		3F8E42C5F4DB102A507ECFF299951F60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BMCustomTableView;
+			target = B6DC4437F0FFEE0055694E0D01AC13A5 /* BMCustomTableView */;
+			targetProxy = 1541A9F4C209200CA533B2648A73F7B3 /* PBXContainerItemProxy */;
 		};
 		5D469758E0CE794F510512F9C41BC663 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -708,14 +820,14 @@
 		8E0B927CA9AD51048B2C6DFF29E4D089 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 70926CC9332294CC4FFD64EAA6CD1464 /* SwiftyJSON */;
+			target = 237BC3E53C971EA0BE3300FA8EBF5B09 /* SwiftyJSON */;
 			targetProxy = 4146AFAD7FA6D7E0A53E852CEA5A6450 /* PBXContainerItemProxy */;
 		};
-		9646B725F54757B5BCD48F91A8D61FC1 /* PBXTargetDependency */ = {
+		D8F5685CF1E381AC136E1D23BCDE2B6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BMCustomTableView;
-			target = B6DC4437F0FFEE0055694E0D01AC13A5 /* BMCustomTableView */;
-			targetProxy = 9C66666499EBF8BE96E165505EDE81E9 /* PBXContainerItemProxy */;
+			name = RandomColorSwift;
+			target = E031F21F8BB2C4C5C72A9B09723B3E84 /* RandomColorSwift */;
+			targetProxy = FCBAB83B20B4118717F02AB836D59EF4 /* PBXContainerItemProxy */;
 		};
 		EC8447160386C5902CE6D80E25BE02DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -723,18 +835,12 @@
 			target = 014E1A56329ADA7E1E5524FEC552D965 /* LoginWithClimate */;
 			targetProxy = D31DE7C4EF0584FC86C7FAE6A8F0036D /* PBXContainerItemProxy */;
 		};
-		FF51BAC806476326DE6C7B37463B56D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 70926CC9332294CC4FFD64EAA6CD1464 /* SwiftyJSON */;
-			targetProxy = 996B4E5EBAE07BB073B451731CF21C67 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		13E5D0962868702B25F17C639616D2DC /* Release */ = {
+		052D50B2710C0F7B090DBD18165A9AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E442C8C9DBEFEDFD45651924EF6A294 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 4EB7B73FC5F659A884CAA967BB59D749 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -759,9 +865,37 @@
 			};
 			name = Release;
 		};
+		091AEED9B89A1B672D36726C29619E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E1553959BFB6258D3624E89EE52885 /* RandomColorSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RandomColorSwift/RandomColorSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RandomColorSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RandomColorSwift/RandomColorSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RandomColorSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		29EC266995C60244FE8FD0C1954FEE80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E637D2E0E267AE10A0F6611450BC92 /* BMCustomTableView.xcconfig */;
+			baseConfigurationReference = EC4282FF79440490537F362C9AC452F5 /* BMCustomTableView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BMCustomTableView;
@@ -810,40 +944,9 @@
 			};
 			name = Debug;
 		};
-		5E28E1308D385BBAE13D9A66F2E20CF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96E3A13673DCCA624504A67DDE3DE025 /* Pods-ClimateControl.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControl/Pods-ClimateControl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ClimateControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		618CAD9CC6DF531C9D08187D11459C5E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F21490C5A1CBBDF3858FB609DD34921 /* LoginWithClimate.xcconfig */;
+			baseConfigurationReference = B753AC266E8B837657DCDB43FEF96E70 /* LoginWithClimate.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -904,7 +1007,7 @@
 		};
 		7CCD936FBEA52CC9068A76A052A1EE7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E637D2E0E267AE10A0F6611450BC92 /* BMCustomTableView.xcconfig */;
+			baseConfigurationReference = EC4282FF79440490537F362C9AC452F5 /* BMCustomTableView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -929,73 +1032,15 @@
 			};
 			name = Release;
 		};
-		8562FAB2F8CC38ED6862A40C8FB54906 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0329F3F821396F8B1C00010ADC429500 /* Pods-ClimateControl.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControl/Pods-ClimateControl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ClimateControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		860BFE7BEEDBBABF3083AAAE4AFB392F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E637D2E0E267AE10A0F6611450BC92 /* BMCustomTableView.xcconfig */;
+			baseConfigurationReference = EC4282FF79440490537F362C9AC452F5 /* BMCustomTableView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BMCustomTableView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		9659B1234BBA6ED8CBFBB12D146FB5BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E442C8C9DBEFEDFD45651924EF6A294 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1032,7 +1077,7 @@
 		};
 		9A0C0D3207A04BA3FAE83D967566B09C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E637D2E0E267AE10A0F6611450BC92 /* BMCustomTableView.xcconfig */;
+			baseConfigurationReference = EC4282FF79440490537F362C9AC452F5 /* BMCustomTableView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1049,6 +1094,37 @@
 				MODULEMAP_FILE = "Target Support Files/BMCustomTableView/BMCustomTableView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = BMCustomTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A24DD26A2FEC074B2AECAD2B0698D076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E3A13673DCCA624504A67DDE3DE025 /* Pods-ClimateControl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControl/Pods-ClimateControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ClimateControl;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1088,9 +1164,64 @@
 			};
 			name = Release;
 		};
+		ABFD296B7EAA13951CDAD5831D0804D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB7B73FC5F659A884CAA967BB59D749 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFD8E7E247D06F5019793FB428CD2B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E1553959BFB6258D3624E89EE52885 /* RandomColorSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RandomColorSwift/RandomColorSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RandomColorSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RandomColorSwift/RandomColorSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RandomColorSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C01EC7E761B5C00FABAF97EEE882B6CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F21490C5A1CBBDF3858FB609DD34921 /* LoginWithClimate.xcconfig */;
+			baseConfigurationReference = B753AC266E8B837657DCDB43FEF96E70 /* LoginWithClimate.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1116,9 +1247,39 @@
 			};
 			name = Debug;
 		};
+		CF9999C05D47349DDD6B351D1D42BFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0329F3F821396F8B1C00010ADC429500 /* Pods-ClimateControl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClimateControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClimateControl/Pods-ClimateControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ClimateControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DCC7926E9FCC0D8C20FF5DFCBBB5743B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F21490C5A1CBBDF3858FB609DD34921 /* LoginWithClimate.xcconfig */;
+			baseConfigurationReference = B753AC266E8B837657DCDB43FEF96E70 /* LoginWithClimate.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = LoginWithClimate;
@@ -1130,7 +1291,7 @@
 		};
 		E0ADD22335D0EDA51424BAF07BD18470 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F21490C5A1CBBDF3858FB609DD34921 /* LoginWithClimate.xcconfig */;
+			baseConfigurationReference = B753AC266E8B837657DCDB43FEF96E70 /* LoginWithClimate.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = LoginWithClimate;
@@ -1143,20 +1304,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1973FCEB23E657535F9DDB5F91509844 /* Build configuration list for PBXNativeTarget "Pods-ClimateControl" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E28E1308D385BBAE13D9A66F2E20CF8 /* Debug */,
-				8562FAB2F8CC38ED6862A40C8FB54906 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
 				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA0216FAA3DFA96244EBACFC56DA4E1 /* Build configuration list for PBXNativeTarget "RandomColorSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091AEED9B89A1B672D36726C29619E5E /* Debug */,
+				AFD8E7E247D06F5019793FB428CD2B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1179,11 +1340,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80B9A2D39ED6E57FB4094D7993362BE8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		490C4045BAA86F4AB9CB549C92E5583C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9659B1234BBA6ED8CBFBB12D146FB5BA /* Debug */,
-				13E5D0962868702B25F17C639616D2DC /* Release */,
+				ABFD296B7EAA13951CDAD5831D0804D7 /* Debug */,
+				052D50B2710C0F7B090DBD18165A9AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A27F79E75EFCEEEA1DE0E999866559B6 /* Build configuration list for PBXNativeTarget "Pods-ClimateControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24DD26A2FEC074B2AECAD2B0698D076 /* Debug */,
+				CF9999C05D47349DDD6B351D1D42BFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

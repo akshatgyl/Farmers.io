@@ -12,9 +12,15 @@ class FieldsCell: UITableViewCell {
 
     @IBOutlet weak var fieldNameLabel: UILabel!
     @IBOutlet weak var thumbNailView: UIImageView!
+    @IBOutlet weak var roundedView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+        self.roundedView.layer.cornerRadius = 10
+        self.roundedView.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
