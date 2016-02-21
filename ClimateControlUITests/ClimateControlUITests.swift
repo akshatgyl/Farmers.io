@@ -37,22 +37,21 @@ class ClimateControlUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let app = XCUIApplication()
-        let element = app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element
-        element.childrenMatchingType(.Button).element.tap()
+        app.otherElements.containingType(.Image, identifier:"farmers.io").childrenMatchingType(.Button).element.tap()
         
         let emailTextField = app.textFields["Email"]
         emailTextField.tap()
         emailTextField.typeText("adityadhingra07@gmail.com")
-        app.secureTextFields["Password"].typeText("Akshat1122")
-        element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).elementBoundByIndex(1).childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.tap()
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        passwordSecureTextField.tap()
+        passwordSecureTextField.typeText("Akshat1122\r")
         
         let tablesQuery = app.tables
-        tablesQuery.staticTexts["Test_field3"].swipeUp()
+        tablesQuery.staticTexts["Test_field3"].tap()
+        tablesQuery.cells.containingType(.StaticText, identifier:"Test_Field5").childrenMatchingType(.StaticText).matchingIdentifier("Test_Field5").elementBoundByIndex(0).tap()
+        tablesQuery.cells.containingType(.StaticText, identifier:"Test_field1").childrenMatchingType(.StaticText).matchingIdentifier("Test_field1").elementBoundByIndex(0).tap()
         
-        let testField2StaticText = tablesQuery.staticTexts["Test_field2"]
-        testField2StaticText.swipeUp()
-        testField2StaticText.swipeDown()
-        testField2StaticText.swipeUp()
     }
     
 }

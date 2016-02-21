@@ -91,7 +91,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="FOm-Pe-g33" secondAttribute="bottom" constant="8" id="upk-5b-K4h"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="fieldNameLabel" destination="1yH-5K-nbT" id="F56-2n-0qL"/>
                                             <outlet property="roundedView" destination="FOm-Pe-g33" id="0aJ-ry-Rv6"/>
@@ -113,7 +112,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="customTableView" destination="iI5-GQ-eGK" id="GMc-yE-2XK"/>
-                        <segue destination="h8c-nK-ncL" kind="show" identifier="displayDetails" id="0My-Q6-QBd"/>
+                        <segue destination="h8c-nK-ncL" kind="presentation" identifier="displayDetails" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="0My-Q6-QBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-Ap-5kO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,7 +122,7 @@
         <!--Details-->
         <scene sceneID="oFU-HR-S1d">
             <objects>
-                <viewController id="h8c-nK-ncL" sceneMemberID="viewController">
+                <viewController id="h8c-nK-ncL" customClass="DetailViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bc0-ab-WE7"/>
                         <viewControllerLayoutGuide type="bottom" id="IZK-c4-bMD"/>
@@ -131,10 +130,43 @@
                     <view key="view" contentMode="scaleToFill" id="ghg-t3-HmY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kve-79-SVo">
+                                <rect key="frame" x="33" y="52" width="309" height="564"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-lR-AE7">
+                                        <rect key="frame" x="34" y="103" width="240" height="128"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-5C-r5m">
+                                        <rect key="frame" x="8" y="8" width="36" height="36"/>
+                                        <state key="normal" image="ic_highlight_off_white_36pt"/>
+                                        <connections>
+                                            <action selector="closebtn:" destination="h8c-nK-ncL" eventType="touchUpInside" id="NMT-em-QSD"/>
+                                        </connections>
+                                    </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HYw-Mo-oJo">
+                                        <rect key="frame" x="0.0" y="298" width="309" height="266"/>
+                                    </mapView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Field Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIC-7R-kEO">
+                                        <rect key="frame" x="111" y="74" width="86" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34822280444792664" green="0.19531192177339946" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="ULq-va-61W"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="fieldImageView" destination="4m9-lR-AE7" id="7Ii-Ga-5Df"/>
+                        <outlet property="fieldName" destination="RIC-7R-kEO" id="X42-Iq-FiU"/>
+                        <outlet property="mapView" destination="HYw-Mo-oJo" id="VbB-T6-2eT"/>
+                        <outlet property="roundedPopUpView" destination="Kve-79-SVo" id="blL-ci-Qfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-T2-b7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,10 +248,6 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-Qk-WVz">
                                                         <rect key="frame" x="6" y="43" width="160" height="209"/>
-<<<<<<< Updated upstream
-                                                        <animations/>
-=======
->>>>>>> Stashed changes
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -228,12 +256,7 @@
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOV-hT-1Af">
-<<<<<<< Updated upstream
-                                                        <rect key="frame" x="50" y="252" width="71" height="93"/>
-                                                        <animations/>
-=======
                                                         <rect key="frame" x="50" y="252" width="71" height="94"/>
->>>>>>> Stashed changes
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -427,5 +450,6 @@
         <image name="accountVC" width="375" height="667"/>
         <image name="background" width="1250" height="781"/>
         <image name="farmers.io" width="340" height="77"/>
+        <image name="ic_highlight_off_white_36pt" width="36" height="36"/>
     </resources>
 </document>

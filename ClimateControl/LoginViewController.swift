@@ -48,16 +48,16 @@ class LoginViewController: UIViewController, LoginWithClimateDelegate {
 //                                                         name: AVPlayerItemDidPlayToEndTimeNotification,
 //                                                         object: nil)
 //        
-//        let loginViewController = LoginWithClimateButton(clientId: "dpsmj7fn2i1o3e", clientSecret: "o5chah7tqujcuoeemcs7lfftqd")
-//        loginViewController.delegate = self
-//        
-//        view.addSubview(loginViewController.view)
-//        
-//        loginViewController.view.translatesAutoresizingMaskIntoConstraints = false
-//        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: NSLayoutFormatOptions.AlignAllCenterY, metrics: nil, views: ["view":loginViewController.view]))
-//        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-30-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":loginViewController.view]))
-//        
-//        self.addChildViewController(loginViewController)
+        let loginViewController = LoginWithClimateButton(clientId: "dpsmj7fn2i1o3e", clientSecret: "o5chah7tqujcuoeemcs7lfftqd")
+        loginViewController.delegate = self
+        
+        view.addSubview(loginViewController.view)
+        
+        loginViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: NSLayoutFormatOptions.AlignAllCenterY, metrics: nil, views: ["view":loginViewController.view]))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-480-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":loginViewController.view]))
+        
+        self.addChildViewController(loginViewController)
     }
     
 //    func loopVideo() {
