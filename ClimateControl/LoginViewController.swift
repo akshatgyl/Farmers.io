@@ -8,16 +8,43 @@
 
 import UIKit
 import LoginWithClimate
+import AVKit
+import AVFoundation
 
 class LoginViewController: UIViewController, LoginWithClimateDelegate {
     
     var accessToken: String?
     var seesion: Session?
     
+    var player: AVPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Load the video from the app bundle.
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("bgvideo", withExtension: "mov")!
+        
+        player = AVPlayer(URL: videoURL)
+        player?.actionAtItemEnd = .None
+        player?.muted = true
+        
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        playerLayer.zPosition = -1
+        
+        playerLayer.frame = view.frame
+        
+        view.layer.addSublayer(playerLayer)
+        
+        player?.play()
+        
+        //loop video
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: "loopVideo",
+                                                         name: AVPlayerItemDidPlayToEndTimeNotification,
+                                                         object: nil)
+        
         let loginViewController = LoginWithClimateButton(clientId: "dpsmj7fn2i1o3e", clientSecret: "o5chah7tqujcuoeemcs7lfftqd")
         loginViewController.delegate = self
         
@@ -28,6 +55,11 @@ class LoginViewController: UIViewController, LoginWithClimateDelegate {
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-30-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":loginViewController.view]))
         
         self.addChildViewController(loginViewController)
+    }
+    
+    func loopVideo() {
+        player?.seekToTime(kCMTimeZero)
+        player?.play()
     }
     
     func didLoginWithClimate(session: Session) {
