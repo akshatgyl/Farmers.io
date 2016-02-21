@@ -13,6 +13,8 @@ import AVFoundation
 
 class LoginViewController: UIViewController, LoginWithClimateDelegate {
     
+    @IBOutlet weak var animatedView: LoginANMTDView!
+    
     var accessToken: String?
     var seesion: Session?
     
@@ -20,47 +22,48 @@ class LoginViewController: UIViewController, LoginWithClimateDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        animatedView.addLoginAnimateAnimation()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // Load the video from the app bundle.
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("bgvideo", withExtension: "mov")!
-        
-        player = AVPlayer(URL: videoURL)
-        player?.actionAtItemEnd = .None
-        player?.muted = true
-        
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        playerLayer.zPosition = -1
-        
-        playerLayer.frame = view.frame
-        
-        view.layer.addSublayer(playerLayer)
-        
-        player?.play()
-        
-        //loop video
-        NSNotificationCenter.defaultCenter().addObserver(self,
-                                                         selector: "loopVideo",
-                                                         name: AVPlayerItemDidPlayToEndTimeNotification,
-                                                         object: nil)
-        
-        let loginViewController = LoginWithClimateButton(clientId: "dpsmj7fn2i1o3e", clientSecret: "o5chah7tqujcuoeemcs7lfftqd")
-        loginViewController.delegate = self
-        
-        view.addSubview(loginViewController.view)
-        
-        loginViewController.view.translatesAutoresizingMaskIntoConstraints = false
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: NSLayoutFormatOptions.AlignAllCenterY, metrics: nil, views: ["view":loginViewController.view]))
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-30-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":loginViewController.view]))
-        
-        self.addChildViewController(loginViewController)
+//        // Load the video from the app bundle.
+//        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("bgvideo", withExtension: "mov")!
+//        
+//        player = AVPlayer(URL: videoURL)
+//        player?.actionAtItemEnd = .None
+//        player?.muted = true
+//        
+//        let playerLayer = AVPlayerLayer(player: player)
+//        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+//        playerLayer.zPosition = -1
+//        
+//        playerLayer.frame = view.frame
+//        
+//        view.layer.addSublayer(playerLayer)
+//        
+//        player?.play()
+//        
+//        //loop video
+//        NSNotificationCenter.defaultCenter().addObserver(self,
+//                                                         selector: "loopVideo",
+//                                                         name: AVPlayerItemDidPlayToEndTimeNotification,
+//                                                         object: nil)
+//        
+//        let loginViewController = LoginWithClimateButton(clientId: "dpsmj7fn2i1o3e", clientSecret: "o5chah7tqujcuoeemcs7lfftqd")
+//        loginViewController.delegate = self
+//        
+//        view.addSubview(loginViewController.view)
+//        
+//        loginViewController.view.translatesAutoresizingMaskIntoConstraints = false
+//        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: NSLayoutFormatOptions.AlignAllCenterY, metrics: nil, views: ["view":loginViewController.view]))
+//        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-30-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":loginViewController.view]))
+//        
+//        self.addChildViewController(loginViewController)
     }
     
-    func loopVideo() {
-        player?.seekToTime(kCMTimeZero)
-        player?.play()
-    }
+//    func loopVideo() {
+//        player?.seekToTime(kCMTimeZero)
+//        player?.play()
+//    }
     
     func didLoginWithClimate(session: Session) {
         self.seesion = session
