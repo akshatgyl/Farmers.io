@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="weathericons-regular-webfont.ttf">
@@ -130,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-Ap-5kO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942.5" y="316.5"/>
+            <point key="canvasLocation" x="2167.5" y="261.5"/>
         </scene>
         <!--Details-->
         <scene sceneID="oFU-HR-S1d">
@@ -183,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-T2-b7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2607.5" y="-479.5"/>
+            <point key="canvasLocation" x="2167.5" y="-619.5"/>
         </scene>
         <!--User Info View Controller-->
         <scene sceneID="eSJ-te-2ns">
@@ -230,6 +231,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-Hw-b4K">
+                                <rect key="frame" x="12" y="11" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="toAction:" destination="srv-WR-xw5" eventType="touchUpInside" id="btc-ze-Mzd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -247,12 +255,14 @@
                         <outlet property="address" destination="0Xb-wD-Bv1" id="dfB-am-IwG"/>
                         <outlet property="name" destination="EZs-zc-b7e" id="0t9-0c-Nsd"/>
                         <outlet property="phone" destination="xsn-Mj-Z2T" id="ukr-5M-816"/>
+                        <outlet property="toMenu" destination="4v6-Hw-b4K" id="fv7-hg-tjl"/>
                         <outlet property="zipcode" destination="jaK-0d-RbV" id="28C-Me-xps"/>
+                        <segue destination="OFg-gJ-dT2" kind="show" identifier="showMenuSegue" id="XBm-4e-wqe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h71-Pb-ofw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.5" y="332.5"/>
+            <point key="canvasLocation" x="2769.5" y="-579.5"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="nQc-LV-1Qo">
@@ -463,7 +473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i2-a8-5L8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="1080"/>
+            <point key="canvasLocation" x="3287" y="-968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5v1-y5-A1J">
@@ -524,7 +534,10 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="UJ0-i3-feS"/>
+                                            <segue destination="srv-WR-xw5" kind="show" identifier="toProfile" id="aKA-ph-2XD">
+                                                <segue key="commit" inheritsFrom="parent" id="QLk-IG-LJs"/>
+                                                <segue key="preview" inheritsFrom="commit" id="LD3-DM-9d4"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-iA-ING">
@@ -553,7 +566,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="8DA-LI-an3"/>
+                                            <segue destination="eWv-Zk-Tr1" kind="show" id="b67-Vz-5He"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -601,7 +614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iw9-yQ-Bdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2607.5" y="332.5"/>
+            <point key="canvasLocation" x="2679.5" y="261.5"/>
         </scene>
     </scenes>
     <resources>
@@ -615,4 +628,9 @@
         <image name="ic_pin_drop_white_36pt" width="36" height="36"/>
         <image name="ic_wb_sunny_white_36pt" width="36" height="36"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XBm-4e-wqe"/>
+        <segue reference="aKA-ph-2XD"/>
+        <segue reference="3Tt-kd-D1K"/>
+    </inferredMetricsTieBreakers>
 </document>

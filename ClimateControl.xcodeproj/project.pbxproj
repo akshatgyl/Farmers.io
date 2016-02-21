@@ -23,7 +23,7 @@
 		69376B6C1C79EAEE00963C7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B6B1C79EAEE00963C7A /* NotificationController.swift */; };
 		69376B6E1C79EAEE00963C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69376B6D1C79EAEE00963C7A /* Assets.xcassets */; };
 		69376B721C79EAEE00963C7A /* ClimateControlWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 69376B541C79EAEE00963C7A /* ClimateControlWatch.app */; };
-		69376B801C7A092200963C7A /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B7F1C7A092200963C7A /* UserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		69376B801C7A092200963C7A /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B7F1C7A092200963C7A /* UserInfoViewController.swift */; };
 		6998BBC41C7946050045D276 /* FieldsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998BBC31C7946050045D276 /* FieldsCell.swift */; };
 		69A1E44E1C789EE000EEE07B /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */; };
 		72E33A7B33E16FC413C65DB7 /* Pods_ClimateControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E681431668F72D049ED76 /* Pods_ClimateControlUITests.framework */; };
@@ -578,11 +578,11 @@
 					};
 					69376B531C79EAEE00963C7A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = JTG9T7N598;
+						DevelopmentTeam = 7A9LG5LNH6;
 					};
 					69376B5F1C79EAEE00963C7A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = JTG9T7N598;
+						DevelopmentTeam = 7A9LG5LNH6;
 					};
 				};
 			};
