@@ -202,10 +202,18 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let cell = sender as? UITableViewCell {
-            let row = customTableView.indexPathForCell(cell)!.row
-            let vc = segue.destinationViewController as! DetailViewController
-            vc.field = self.fields![row] as? NSDictionary
+        if (segue.identifier == "displayDetails") {
+            if let cell = sender as? UITableViewCell {
+                let row = customTableView.indexPathForCell(cell)!.row
+                let vc = segue.destinationViewController as! DetailViewController
+                vc.field = self.fields![row] as? NSDictionary
+                vc.session = self.session
+            }
+        } else if segue.identifier == "displayGeo" {
+            
+        } else if segue.identifier == "displayUser" {
+        
+            let vc = segue.destinationViewController as! UserInfoViewController
             vc.session = self.session
         }
     }
@@ -216,6 +224,10 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
         self.performSegueWithIdentifier("displayDetails", sender: currentCell)
     }
     
+    @IBAction func onUser(sender: AnyObject) {
+        performSegueWithIdentifier("displayUser", sender: self)
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

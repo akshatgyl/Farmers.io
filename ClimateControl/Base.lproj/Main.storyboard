@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -26,12 +26,15 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farmers.io" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-94-Kbe">
                                 <rect key="frame" x="34" y="-18" width="307" height="159"/>
+                                <animations/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-gk-jE6" customClass="LoginANMTDView" customModule="ClimateControl" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.2956642079459959" green="0.64791655874956844" blue="0.88776041666666672" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="OAj-9j-mkE"/>
@@ -59,13 +62,14 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="169" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iI5-GQ-eGK" customClass="BMCustomTableView" customModule="BMCustomTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fieldCell" rowHeight="169" id="GUj-gc-dcm" customClass="FieldsCell" customModule="ClimateControl" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="169"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GUj-gc-dcm" id="Yty-b1-s3Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-Pe-g33">
@@ -73,17 +77,21 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qFS-Kv-5ek">
                                                             <rect key="frame" x="111" y="12" width="240" height="128"/>
+                                                            <animations/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Field Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-5K-nbT">
                                                             <rect key="frame" x="8" y="65" width="86" height="21"/>
+                                                            <animations/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="FOm-Pe-g33" firstAttribute="top" secondItem="Yty-b1-s3Z" secondAttribute="top" constant="8" id="G9D-cE-xcu"/>
                                                 <constraint firstAttribute="trailing" secondItem="FOm-Pe-g33" secondAttribute="trailing" constant="8" id="MU8-hz-kfq"/>
@@ -91,6 +99,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="FOm-Pe-g33" secondAttribute="bottom" constant="8" id="upk-5b-K4h"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <outlet property="fieldNameLabel" destination="1yH-5K-nbT" id="F56-2n-0qL"/>
                                             <outlet property="roundedView" destination="FOm-Pe-g33" id="0aJ-ry-Rv6"/>
@@ -100,6 +109,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iI5-GQ-eGK" firstAttribute="leading" secondItem="yVV-nt-zbr" secondAttribute="leading" id="6j0-GC-j1d"/>
@@ -108,11 +118,18 @@
                             <constraint firstItem="iI5-GQ-eGK" firstAttribute="top" secondItem="yVV-nt-zbr" secondAttribute="top" id="Obj-0P-dgS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Fields" id="iMg-MO-DC1"/>
+                    <navigationItem key="navigationItem" title="Fields" id="iMg-MO-DC1">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="vJi-4R-Q2C">
+                            <connections>
+                                <action selector="onUser:" destination="eWv-Zk-Tr1" id="77s-2G-KKt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="customTableView" destination="iI5-GQ-eGK" id="GMc-yE-2XK"/>
                         <segue destination="h8c-nK-ncL" kind="presentation" identifier="displayDetails" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="0My-Q6-QBd"/>
+                        <segue destination="srv-WR-xw5" kind="push" identifier="displayUser" id="5Jf-0Z-kmq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-Ap-5kO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,9 +153,11 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-lR-AE7">
                                         <rect key="frame" x="34" y="103" width="240" height="128"/>
+                                        <animations/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-5C-r5m">
                                         <rect key="frame" x="8" y="8" width="36" height="36"/>
+                                        <animations/>
                                         <state key="normal" image="ic_highlight_off_white_36pt"/>
                                         <connections>
                                             <action selector="closebtn:" destination="h8c-nK-ncL" eventType="touchUpInside" id="NMT-em-QSD"/>
@@ -146,17 +165,21 @@
                                     </button>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HYw-Mo-oJo">
                                         <rect key="frame" x="0.0" y="298" width="309" height="266"/>
+                                        <animations/>
                                     </mapView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Field Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIC-7R-kEO">
                                         <rect key="frame" x="111" y="74" width="86" height="21"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="0.34822280444792664" green="0.19531192177339946" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="ULq-va-61W"/>
@@ -172,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="2499.5" y="261.5"/>
         </scene>
-        <!--View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="eSJ-te-2ns">
             <objects>
-                <viewController id="srv-WR-xw5" sceneMemberID="viewController">
+                <viewController id="srv-WR-xw5" customClass="UserInfoViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E9U-EH-Bel"/>
                         <viewControllerLayoutGuide type="bottom" id="Ww2-et-xcU"/>
@@ -186,20 +209,45 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="accountVC" translatesAutoresizingMaskIntoConstraints="NO" id="Eia-JI-JXj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aditya Dhingra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-zc-b7e">
                                 <rect key="frame" x="20" y="110" width="335" height="65"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-Aw-iVG">
                                 <rect key="frame" x="20" y="42" width="335" height="65"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xb-wD-Bv1">
+                                <rect key="frame" x="210" y="432" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsn-Mj-Z2T">
+                                <rect key="frame" x="210" y="578" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaK-0d-RbV">
+                                <rect key="frame" x="210" y="522" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EZs-zc-b7e" firstAttribute="trailing" secondItem="gyq-YG-Dxc" secondAttribute="trailingMargin" id="PY1-ay-H3R"/>
@@ -210,11 +258,18 @@
                             <constraint firstItem="Eia-JI-JXj" firstAttribute="top" secondItem="gyq-YG-Dxc" secondAttribute="topMargin" id="iMc-7m-GH3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SDX-3g-LZw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="address" destination="0Xb-wD-Bv1" id="dfB-am-IwG"/>
+                        <outlet property="name" destination="EZs-zc-b7e" id="0t9-0c-Nsd"/>
+                        <outlet property="phone" destination="xsn-Mj-Z2T" id="ukr-5M-816"/>
+                        <outlet property="zipcode" destination="jaK-0d-RbV" id="28C-Me-xps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h71-Pb-ofw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499.5" y="997.5"/>
+            <point key="canvasLocation" x="2250.5" y="1026.5"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="nQc-LV-1Qo">
@@ -230,6 +285,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9jb-fr-MI6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZf-kE-1az" userLabel="Tint View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -242,12 +298,14 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melbourne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-tH-Yp5">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="43"/>
+                                                        <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-Qk-WVz">
                                                         <rect key="frame" x="6" y="43" width="160" height="209"/>
+                                                        <animations/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -256,7 +314,8 @@
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOV-hT-1Af">
-                                                        <rect key="frame" x="50" y="252" width="71" height="94"/>
+                                                        <rect key="frame" x="50" y="252" width="71" height="93"/>
+                                                        <animations/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -268,8 +327,10 @@
                                                         </variation>
                                                     </label>
                                                 </subviews>
+                                                <animations/>
                                             </stackView>
                                         </subviews>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstItem="tH5-ly-MHL" firstAttribute="height" secondItem="LsL-7l-ED6" secondAttribute="height" id="0XC-pZ-s6i"/>
                                             <constraint firstItem="tH5-ly-MHL" firstAttribute="top" secondItem="LsL-7l-ED6" secondAttribute="top" id="gsb-iy-2Fq"/>
@@ -288,6 +349,7 @@
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-ip-3vb" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
+                                                                <animations/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="115" id="fV0-MA-amu"/>
                                                                 </constraints>
@@ -301,6 +363,7 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-m9-NPD" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
+                                                                <animations/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -311,6 +374,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
+                                                        <animations/>
                                                         <constraints>
                                                             <constraint firstItem="zHk-ip-3vb" firstAttribute="height" secondItem="tRj-m9-NPD" secondAttribute="height" id="Vzd-OG-Yny"/>
                                                         </constraints>
@@ -320,6 +384,7 @@
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-px-tSW" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
+                                                                <animations/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -331,6 +396,7 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6A-h9-idt" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
+                                                                <animations/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -341,8 +407,10 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
+                                                        <animations/>
                                                     </stackView>
                                                 </subviews>
+                                                <animations/>
                                                 <constraints>
                                                     <constraint firstItem="V6A-h9-idt" firstAttribute="height" secondItem="zHk-ip-3vb" secondAttribute="height" id="876-y6-bXi"/>
                                                     <constraint firstItem="VDa-px-tSW" firstAttribute="height" secondItem="zHk-ip-3vb" secondAttribute="height" id="dN6-nR-mlu"/>
@@ -350,6 +418,7 @@
                                                 <variation key="heightClass=compact" axis="vertical"/>
                                             </stackView>
                                         </subviews>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstItem="cBT-n3-yE6" firstAttribute="centerX" secondItem="KRI-bq-4iT" secondAttribute="centerX" id="KxJ-T9-owA"/>
                                             <constraint firstItem="cBT-n3-yE6" firstAttribute="height" secondItem="KRI-bq-4iT" secondAttribute="height" id="LOw-R3-d4P"/>
@@ -357,6 +426,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="KRI-bq-4iT" firstAttribute="width" secondItem="yZf-kE-1az" secondAttribute="width" multiplier="0.5" id="9iy-JV-DxH"/>
@@ -401,6 +471,7 @@
                                 </variation>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yZf-kE-1az" firstAttribute="centerY" secondItem="9jb-fr-MI6" secondAttribute="centerY" id="3yx-u4-oKI"/>
@@ -435,6 +506,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ztf-ej-Unw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

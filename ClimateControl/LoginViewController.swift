@@ -1,4 +1,4 @@
-sz//
+//
 //  ViewController.swift
 //  ClimateControl
 //
