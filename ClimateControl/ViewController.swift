@@ -41,6 +41,7 @@ class ViewController: UIViewController, LoginWithClimateDelegate {
             (fieldNames: [String]) in
             dispatch_async(dispatch_get_main_queue(), {
                 self.label.text = "Welcome \(session.userInfo.firstName)\nYour fields are:\n\(fieldNames.prefix(12))"
+                self.performSegueWithIdentifier("displayFields", sender: self)
             })
         }
     }
@@ -79,8 +80,9 @@ class ViewController: UIViewController, LoginWithClimateDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let vc = segue.destinationViewController as! FieldsViewController
-        vc.session = self.seesion
+        let vc = segue.destinationViewController as! UINavigationController
+        let vcMain = vc.topViewController as! FieldsViewController
+        vcMain.session = self.seesion
     }
 
     @IBAction func onShowFields(sender: AnyObject) {

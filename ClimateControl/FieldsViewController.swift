@@ -83,7 +83,7 @@ class FieldsViewController: UIViewController, CLLocationManagerDelegate {
     
     func fetchThumbnailForField(fieldId: Int, accessToken: String, userId: Int) {
         // Build url
-        let components = NSURLComponents(string: "https://hackillinois.climate.com/api/fields")
+        let components = NSURLComponents(string: "https://api.climate.com/api/thumbnail/v1/fields/\(fieldId)")
         components!.queryItems = []
         components!.queryItems?.append(NSURLQueryItem(name: "format", value: "png"))
         components!.queryItems?.append(NSURLQueryItem(name: "user-id", value: String(userId)))
@@ -94,29 +94,13 @@ class FieldsViewController: UIViewController, CLLocationManagerDelegate {
             (data, response, error) -> Void in
             // check for 200 response
             let thumbnailImage = UIImage(data: data!)
-            dispatch_async(dispatch_get_main_queue(),{
-                
-                self.thumbnailView.image = thumbnailImage
-                
+            // do something to the data -> set in UIImageView?
+            
+             dispatch_async(dispatch_get_main_queue(),{
+                    self.thumbnailView.image = thumbnailImage
             })
             
-            // do something to the data -> set in UIImageView?
         }
-        task.resume()
-        
-        
-        let request1 = NSMutableURLRequest(URL: NSURL(string: "ttps://api.climate.com/api/thumbnail/v1/fields/\(fieldId)")!)
-        request.setValue("Bearer \(session?.accessToken)", forHTTPHeaderField: "Authorization")
-        
-        let task1 = NSURLSession.sharedSession().dataTaskWithRequest(request1) {
-            (data, response, error) in
-            let jsonObject = try! NSJSONSerialization.JSONObjectWithData(data!, options: []) as! [String: AnyObject]
-            let clus = jsonObject["features"] as! [[String: AnyObject]]
-            // Do something with clus
-            print("clus")
-            print(clus)
-        }
-        
         task.resume()
     }
     
