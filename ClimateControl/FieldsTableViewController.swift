@@ -164,7 +164,7 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
                 task.resume()
         
         print(self.fields)
-        cell.backgroundColor = colors[indexPath.row]
+        cell.roundedView.backgroundColor = colors[indexPath.row]
         return cell
         
     }
@@ -198,11 +198,22 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
         
         customTableView.customizeCell(cell)
         
+        
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cell = sender as? UITableViewCell {
+            let row = customTableView.indexPathForCell(cell)!.row
+            let vc = segue.destinationViewController as! DetailViewController
+            vc.field = self.fields![row] as? NSDictionary
+            vc.session = self.session
+        }
+    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("displayDetails", sender: self)
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
+        self.performSegueWithIdentifier("displayDetails", sender: currentCell)
     }
     
     
