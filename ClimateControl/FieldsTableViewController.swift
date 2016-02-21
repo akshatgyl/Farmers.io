@@ -37,6 +37,8 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        customTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
         let navBar = self.navigationController!.navigationBar
         navBar.barTintColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
         navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -188,7 +190,7 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
                 task.resume()
         
         print(self.fields)
-        cell.roundedView.backgroundColor = colors[indexPath.row]
+        cell.roundedView.backgroundColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
         return cell
         
     }

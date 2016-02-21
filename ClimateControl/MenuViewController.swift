@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import LoginWithClimate
 
 
 
@@ -30,6 +31,8 @@ class MenuViewController: UIViewController, GuillotineMenu {
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.sizeToFit()
     }
+    
+    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -55,13 +58,11 @@ class MenuViewController: UIViewController, GuillotineMenu {
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func menuButtonTapped(sender: UIButton) {
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
-    }
     
     @IBAction func closeMenu(sender: UIButton) {
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     
 }
 
