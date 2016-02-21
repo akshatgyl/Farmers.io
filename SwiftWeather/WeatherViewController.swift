@@ -18,6 +18,11 @@ class WeatherViewController: UIViewController {
     viewModel?.startLocationService()
   }
 
+    @IBAction func closeAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
   // MARK: ViewModel
   var viewModel: WeatherViewModel? {
     didSet {

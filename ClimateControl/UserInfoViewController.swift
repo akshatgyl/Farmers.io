@@ -41,6 +41,12 @@ class UserInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var closeAction: UIButton!
+    
+    @IBAction func closeNow(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBOutlet weak var toMenu: UIButton!
     
     @IBAction func toAction(sender: UIButton) {
