@@ -23,6 +23,7 @@
 		69376B6C1C79EAEE00963C7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B6B1C79EAEE00963C7A /* NotificationController.swift */; };
 		69376B6E1C79EAEE00963C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69376B6D1C79EAEE00963C7A /* Assets.xcassets */; };
 		69376B721C79EAEE00963C7A /* ClimateControlWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 69376B541C79EAEE00963C7A /* ClimateControlWatch.app */; };
+		69376B801C7A092200963C7A /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B7F1C7A092200963C7A /* UserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6998BBC41C7946050045D276 /* FieldsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998BBC31C7946050045D276 /* FieldsCell.swift */; };
 		69A1E44E1C789EE000EEE07B /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */; };
 		72E33A7B33E16FC413C65DB7 /* Pods_ClimateControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E681431668F72D049ED76 /* Pods_ClimateControlUITests.framework */; };
@@ -158,6 +159,7 @@
 		69376B6B1C79EAEE00963C7A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		69376B6D1C79EAEE00963C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69376B6F1C79EAEE00963C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69376B7F1C7A092200963C7A /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		6998BBC31C7946050045D276 /* FieldsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsCell.swift; sourceTree = "<group>"; };
 		69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewController.swift; sourceTree = "<group>"; };
 		894FF04F1C79EE07000DF6EA /* blades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blades.png; path = images/blades.png; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				894FF0711C7A07D0000DF6EA /* MenuViewController.swift */,
 				6998BBC31C7946050045D276 /* FieldsCell.swift */,
 				894FF05C1C79F578000DF6EA /* DetailViewController.swift */,
+				69376B7F1C7A092200963C7A /* UserInfoViewController.swift */,
 			);
 			path = ClimateControl;
 			sourceTree = "<group>";
@@ -559,6 +562,11 @@
 					692960E31C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = WD5637H5AA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					692960FA1C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -743,6 +751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				692960EA1C786D0400F0B0A0 /* LoginViewController.swift in Sources */,
+				69376B801C7A092200963C7A /* UserInfoViewController.swift in Sources */,
 				692960F01C786D0400F0B0A0 /* ClimateControl.xcdatamodeld in Sources */,
 				89A8DDBE1C7931DB00FA3088 /* WeatherIcon.swift in Sources */,
 				89A8DDB21C7931DB00FA3088 /* Forecast.swift in Sources */,
