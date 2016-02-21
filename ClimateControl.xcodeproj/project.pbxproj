@@ -15,7 +15,7 @@
 		692960F51C786D0400F0B0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692960F31C786D0400F0B0A0 /* LaunchScreen.storyboard */; };
 		692961001C786D0400F0B0A0 /* ClimateControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692960FF1C786D0400F0B0A0 /* ClimateControlTests.swift */; };
 		6929610B1C786D0400F0B0A0 /* ClimateControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6929610A1C786D0400F0B0A0 /* ClimateControlUITests.swift */; };
-		69A1E44E1C789EE000EEE07B /* FieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1E44D1C789EE000EEE07B /* FieldsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		69A1E44E1C789EE000EEE07B /* FieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1E44D1C789EE000EEE07B /* FieldsViewController.swift */; };
 		72E33A7B33E16FC413C65DB7 /* Pods_ClimateControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E681431668F72D049ED76 /* Pods_ClimateControlUITests.framework */; };
 		B6E0576CA1F719625D9DF76C /* Pods_ClimateControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19149018BE84C23308DF753A /* Pods_ClimateControl.framework */; };
 /* End PBXBuildFile section */
@@ -248,7 +248,7 @@
 				TargetAttributes = {
 					692960E31C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = JTG9T7N598;
+						DevelopmentTeam = 7A9LG5LNH6;
 					};
 					692960FA1C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
