@@ -216,10 +216,9 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-Qk-WVz">
                                                         <rect key="frame" x="6" y="43" width="160" height="209"/>
-<<<<<<< Updated upstream
+
                                                         <animations/>
-=======
->>>>>>> Stashed changes
+
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -228,12 +227,10 @@
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOV-hT-1Af">
-<<<<<<< Updated upstream
+
                                                         <rect key="frame" x="50" y="252" width="71" height="93"/>
                                                         <animations/>
-=======
-                                                        <rect key="frame" x="50" y="252" width="71" height="94"/>
->>>>>>> Stashed changes
+
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>

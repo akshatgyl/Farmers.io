@@ -520,7 +520,7 @@
 				TargetAttributes = {
 					692960E31C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = JTG9T7N598;
+						DevelopmentTeam = WD5637H5AA;
 					};
 					692960FA1C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -1093,6 +1093,7 @@
 				69376B761C79EAEE00963C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69376B791C79EAEE00963C7A /* Build configuration list for PBXNativeTarget "ClimateControlWatch" */ = {
 			isa = XCConfigurationList;
@@ -1101,6 +1102,7 @@
 				69376B741C79EAEE00963C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
