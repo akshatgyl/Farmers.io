@@ -9,8 +9,9 @@
 import UIKit
 import MapKit
 import LoginWithClimate
+import CoreLocation
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDelegate {
     var field: NSDictionary?
     
     @IBOutlet weak var fieldName: UILabel!
@@ -23,6 +24,8 @@ class DetailViewController: UIViewController {
     var session: Session?
     
     @IBOutlet weak var mapView: MKMapView!
+    var lati: Double?
+    var longi: Double?
     
     @IBAction func closebtn(sender: AnyObject) {
          self.dismissViewControllerAnimated(true, completion: nil)
@@ -42,8 +45,8 @@ class DetailViewController: UIViewController {
         let area = field0!["area"] as! NSDictionary
         let areaq = area["q"] as! Double
         let coordinates = fieldCenter["coordinates"] as! NSArray
-        let longi = coordinates[0] as! Double
-        let lati = coordinates[1] as! Double
+        self.longi = coordinates[0] as! Double
+        self.lati = coordinates[1] as! Double
         print(areaq)
         print(longi)
         print(lati)
@@ -83,5 +86,37 @@ class DetailViewController: UIViewController {
             
         }
         task.resume()
+        
+        self.mapView.delegate = self
+        let fieldCoordinates = CLLocationCoordinate2DMake(lati!, longi!)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = fieldCoordinates
+        annotation.title = field0?["name"] as? String
+        mapView.addAnnotation(annotation)
+        
     }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "customAnnotationView"
+        
+        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+        if (annotationView == nil) {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        }
+        else {
+            annotationView!.annotation = annotation
+        }
+        
+        return annotationView
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            let span = MKCoordinateSpanMake(0.1, 0.1)
+            let region = MKCoordinateRegionMake(location.coordinate, span)
+            mapView.setRegion(region, animated: false)
+        }
+    }
+    
+    
 }
