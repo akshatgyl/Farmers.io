@@ -11,9 +11,9 @@ import LoginWithClimate
 import MapKit
 import BMCustomTableView
 import RandomColorSwift
+import WatchConnectivity
 
-
-class FieldsTableViewController: UIViewController, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate {
+class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate {
     
     
     let locationManager = CLLocationManager()
@@ -30,6 +30,11 @@ class FieldsTableViewController: UIViewController, CLLocationManagerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if WCSession.isSupported() {
+            WCSession.defaultSession().delegate = self
+            WCSession.defaultSession().activateSession()
+        }
         
         // Do any aditional setup after loading the view.
         
@@ -140,6 +145,19 @@ class FieldsTableViewController: UIViewController, CLLocationManagerDelegate, UI
                     print(data)
                     dispatch_async(dispatch_get_main_queue(),{
                         cell.thumbNailView.image = thumbnailImage
+                        
+                        let image = thumbnailImage
+                        
+                        let data = UIImageJPEGRepresentation(image, 1.0)
+                        
+                        WCSession.defaultSession().sendMessageData(data!, replyHandler: { (data) -> Void in
+                            // handle the response from the device
+                            
+                            }) { (error) -> Void in
+                                print("error: \(error.localizedDescription)")
+                                
+                        }
+
                     })
                     
                 }

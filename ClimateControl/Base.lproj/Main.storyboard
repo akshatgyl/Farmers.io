@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="951.5" y="261.5"/>
         </scene>
-        <!--Fields Table View Controller-->
+        <!--Fields-->
         <scene sceneID="Ek9-8o-Pah">
             <objects>
                 <viewController id="eWv-Zk-Tr1" customClass="FieldsTableViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +113,7 @@
                             <constraint firstItem="iI5-GQ-eGK" firstAttribute="top" secondItem="yVV-nt-zbr" secondAttribute="top" id="Obj-0P-dgS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iMg-MO-DC1"/>
+                    <navigationItem key="navigationItem" title="Fields" id="iMg-MO-DC1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="customTableView" destination="iI5-GQ-eGK" id="GMc-yE-2XK"/>
@@ -124,7 +124,7 @@
             </objects>
             <point key="canvasLocation" x="2067.5" y="261.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Details-->
         <scene sceneID="oFU-HR-S1d">
             <objects>
                 <viewController id="h8c-nK-ncL" sceneMemberID="viewController">
@@ -138,7 +138,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ULq-va-61W"/>
+                    <navigationItem key="navigationItem" title="Details" id="ULq-va-61W"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-T2-b7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -225,8 +225,8 @@
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-Qk-WVz">
-                                                        <rect key="frame" x="3" y="43" width="166" height="168"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-Qk-WVz">
+                                                        <rect key="frame" x="6" y="43" width="160" height="209"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -235,8 +235,8 @@
                                                             <rect key="frame" x="5.5" y="21" width="159.5" height="208.5"/>
                                                         </variation>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOV-hT-1Af">
-                                                        <rect key="frame" x="31" y="211" width="110" height="134"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOV-hT-1Af">
+                                                        <rect key="frame" x="50" y="252" width="71" height="93"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -263,13 +263,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRI-bq-4iT" userLabel="Forecast Container View">
                                         <rect key="frame" x="0.0" y="425" width="600" height="115"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
                                                 <rect key="frame" x="143" y="0.0" width="314" height="115"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-i7-DNK">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-i7-DNK">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-ip-3vb" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-ip-3vb" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <constraints>
@@ -283,7 +283,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="10"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-m9-NPD" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-m9-NPD" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <userDefinedRuntimeAttributes>
@@ -301,10 +301,10 @@
                                                             <constraint firstItem="zHk-ip-3vb" firstAttribute="height" secondItem="tRj-m9-NPD" secondAttribute="height" id="Vzd-OG-Yny"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sqn-z2-8c4">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sqn-z2-8c4">
                                                         <rect key="frame" x="172" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-px-tSW" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-px-tSW" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <userDefinedRuntimeAttributes>
@@ -316,7 +316,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="12"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6A-h9-idt" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6A-h9-idt" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <userDefinedRuntimeAttributes>

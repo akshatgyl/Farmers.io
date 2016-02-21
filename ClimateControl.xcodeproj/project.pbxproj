@@ -15,6 +15,14 @@
 		692960F51C786D0400F0B0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692960F31C786D0400F0B0A0 /* LaunchScreen.storyboard */; };
 		692961001C786D0400F0B0A0 /* ClimateControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692960FF1C786D0400F0B0A0 /* ClimateControlTests.swift */; };
 		6929610B1C786D0400F0B0A0 /* ClimateControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6929610A1C786D0400F0B0A0 /* ClimateControlUITests.swift */; };
+		69376B581C79EAEE00963C7A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69376B561C79EAEE00963C7A /* Interface.storyboard */; };
+		69376B5A1C79EAEE00963C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69376B591C79EAEE00963C7A /* Assets.xcassets */; };
+		69376B611C79EAEE00963C7A /* ClimateControlWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69376B601C79EAEE00963C7A /* ClimateControlWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69376B681C79EAEE00963C7A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B671C79EAEE00963C7A /* InterfaceController.swift */; };
+		69376B6A1C79EAEE00963C7A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B691C79EAEE00963C7A /* ExtensionDelegate.swift */; };
+		69376B6C1C79EAEE00963C7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B6B1C79EAEE00963C7A /* NotificationController.swift */; };
+		69376B6E1C79EAEE00963C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69376B6D1C79EAEE00963C7A /* Assets.xcassets */; };
+		69376B721C79EAEE00963C7A /* ClimateControlWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 69376B541C79EAEE00963C7A /* ClimateControlWatch.app */; };
 		6998BBC41C7946050045D276 /* FieldsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998BBC31C7946050045D276 /* FieldsCell.swift */; };
 		69A1E44E1C789EE000EEE07B /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */; };
 		72E33A7B33E16FC413C65DB7 /* Pods_ClimateControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E681431668F72D049ED76 /* Pods_ClimateControlUITests.framework */; };
@@ -54,9 +62,45 @@
 			remoteGlobalIDString = 692960E31C786D0400F0B0A0;
 			remoteInfo = ClimateControl;
 		};
+		69376B621C79EAEE00963C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692960DC1C786D0400F0B0A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69376B5F1C79EAEE00963C7A;
+			remoteInfo = "ClimateControlWatch Extension";
+		};
+		69376B701C79EAEE00963C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692960DC1C786D0400F0B0A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69376B531C79EAEE00963C7A;
+			remoteInfo = ClimateControlWatch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		69376B781C79EAEE00963C7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				69376B611C79EAEE00963C7A /* ClimateControlWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69376B7A1C79EAEE00963C7A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				69376B721C79EAEE00963C7A /* ClimateControlWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		694520611C790FDD0031C4D1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,6 +131,17 @@
 		692961061C786D0400F0B0A0 /* ClimateControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimateControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6929610A1C786D0400F0B0A0 /* ClimateControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateControlUITests.swift; sourceTree = "<group>"; };
 		6929610C1C786D0400F0B0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69376B541C79EAEE00963C7A /* ClimateControlWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimateControlWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69376B571C79EAEE00963C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		69376B591C79EAEE00963C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69376B5B1C79EAEE00963C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69376B601C79EAEE00963C7A /* ClimateControlWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ClimateControlWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69376B661C79EAEE00963C7A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		69376B671C79EAEE00963C7A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		69376B691C79EAEE00963C7A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		69376B6B1C79EAEE00963C7A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		69376B6D1C79EAEE00963C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69376B6F1C79EAEE00963C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6998BBC31C7946050045D276 /* FieldsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsCell.swift; sourceTree = "<group>"; };
 		69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewController.swift; sourceTree = "<group>"; };
 		8904066A1C79791300AE21B0 /* bgvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = bgvideo.mov; sourceTree = "<group>"; };
@@ -135,6 +190,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69376B5D1C79EAEE00963C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -154,6 +216,8 @@
 				692960E61C786D0400F0B0A0 /* ClimateControl */,
 				692960FE1C786D0400F0B0A0 /* ClimateControlTests */,
 				692961091C786D0400F0B0A0 /* ClimateControlUITests */,
+				69376B551C79EAEE00963C7A /* ClimateControlWatch */,
+				69376B641C79EAEE00963C7A /* ClimateControlWatch Extension */,
 				692960E51C786D0400F0B0A0 /* Products */,
 				CC88FFB08AD4ED6DCCCCE92D /* Pods */,
 				1E2CAC1993034FE349173CB8 /* Frameworks */,
@@ -166,6 +230,8 @@
 				692960E41C786D0400F0B0A0 /* ClimateControl.app */,
 				692960FB1C786D0400F0B0A0 /* ClimateControlTests.xctest */,
 				692961061C786D0400F0B0A0 /* ClimateControlUITests.xctest */,
+				69376B541C79EAEE00963C7A /* ClimateControlWatch.app */,
+				69376B601C79EAEE00963C7A /* ClimateControlWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +269,37 @@
 				6929610C1C786D0400F0B0A0 /* Info.plist */,
 			);
 			path = ClimateControlUITests;
+			sourceTree = "<group>";
+		};
+		69376B551C79EAEE00963C7A /* ClimateControlWatch */ = {
+			isa = PBXGroup;
+			children = (
+				69376B561C79EAEE00963C7A /* Interface.storyboard */,
+				69376B591C79EAEE00963C7A /* Assets.xcassets */,
+				69376B5B1C79EAEE00963C7A /* Info.plist */,
+			);
+			path = ClimateControlWatch;
+			sourceTree = "<group>";
+		};
+		69376B641C79EAEE00963C7A /* ClimateControlWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				69376B671C79EAEE00963C7A /* InterfaceController.swift */,
+				69376B691C79EAEE00963C7A /* ExtensionDelegate.swift */,
+				69376B6B1C79EAEE00963C7A /* NotificationController.swift */,
+				69376B6D1C79EAEE00963C7A /* Assets.xcassets */,
+				69376B6F1C79EAEE00963C7A /* Info.plist */,
+				69376B651C79EAEE00963C7A /* Supporting Files */,
+			);
+			path = "ClimateControlWatch Extension";
+			sourceTree = "<group>";
+		};
+		69376B651C79EAEE00963C7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69376B661C79EAEE00963C7A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		89A8DD971C7931B700FA3088 /* SwiftWeather */ = {
@@ -310,10 +407,12 @@
 				694520611C790FDD0031C4D1 /* CopyFiles */,
 				8C4CC33320353271E98F9E6C /* Embed Pods Frameworks */,
 				9C627BBD755B2BBB0BC4D6B3 /* Copy Pods Resources */,
+				69376B7A1C79EAEE00963C7A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				69376B711C79EAEE00963C7A /* PBXTargetDependency */,
 			);
 			name = ClimateControl;
 			productName = ClimateControl;
@@ -358,6 +457,40 @@
 			productReference = 692961061C786D0400F0B0A0 /* ClimateControlUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		69376B531C79EAEE00963C7A /* ClimateControlWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69376B791C79EAEE00963C7A /* Build configuration list for PBXNativeTarget "ClimateControlWatch" */;
+			buildPhases = (
+				69376B521C79EAEE00963C7A /* Resources */,
+				69376B781C79EAEE00963C7A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69376B631C79EAEE00963C7A /* PBXTargetDependency */,
+			);
+			name = ClimateControlWatch;
+			productName = ClimateControlWatch;
+			productReference = 69376B541C79EAEE00963C7A /* ClimateControlWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		69376B5F1C79EAEE00963C7A /* ClimateControlWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69376B771C79EAEE00963C7A /* Build configuration list for PBXNativeTarget "ClimateControlWatch Extension" */;
+			buildPhases = (
+				69376B5C1C79EAEE00963C7A /* Sources */,
+				69376B5D1C79EAEE00963C7A /* Frameworks */,
+				69376B5E1C79EAEE00963C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClimateControlWatch Extension";
+			productName = "ClimateControlWatch Extension";
+			productReference = 69376B601C79EAEE00963C7A /* ClimateControlWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,7 +502,7 @@
 				TargetAttributes = {
 					692960E31C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = WD5637H5AA;
+						DevelopmentTeam = JTG9T7N598;
 					};
 					692960FA1C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -378,6 +511,14 @@
 					692961051C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 692960E31C786D0400F0B0A0;
+					};
+					69376B531C79EAEE00963C7A = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = JTG9T7N598;
+					};
+					69376B5F1C79EAEE00963C7A = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = JTG9T7N598;
 					};
 				};
 			};
@@ -397,6 +538,8 @@
 				692960E31C786D0400F0B0A0 /* ClimateControl */,
 				692960FA1C786D0400F0B0A0 /* ClimateControlTests */,
 				692961051C786D0400F0B0A0 /* ClimateControlUITests */,
+				69376B531C79EAEE00963C7A /* ClimateControlWatch */,
+				69376B5F1C79EAEE00963C7A /* ClimateControlWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +569,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69376B521C79EAEE00963C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69376B5A1C79EAEE00963C7A /* Assets.xcassets in Resources */,
+				69376B581C79EAEE00963C7A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69376B5E1C79EAEE00963C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69376B6E1C79EAEE00963C7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +713,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69376B5C1C79EAEE00963C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69376B6C1C79EAEE00963C7A /* NotificationController.swift in Sources */,
+				69376B6A1C79EAEE00963C7A /* ExtensionDelegate.swift in Sources */,
+				69376B681C79EAEE00963C7A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -565,6 +735,16 @@
 			isa = PBXTargetDependency;
 			target = 692960E31C786D0400F0B0A0 /* ClimateControl */;
 			targetProxy = 692961071C786D0400F0B0A0 /* PBXContainerItemProxy */;
+		};
+		69376B631C79EAEE00963C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69376B5F1C79EAEE00963C7A /* ClimateControlWatch Extension */;
+			targetProxy = 69376B621C79EAEE00963C7A /* PBXContainerItemProxy */;
+		};
+		69376B711C79EAEE00963C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69376B531C79EAEE00963C7A /* ClimateControlWatch */;
+			targetProxy = 69376B701C79EAEE00963C7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -583,6 +763,14 @@
 				692960F41C786D0400F0B0A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		69376B561C79EAEE00963C7A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69376B571C79EAEE00963C7A /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -684,7 +872,7 @@
 				INFOPLIST_FILE = ClimateControl/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl1;
+				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -705,7 +893,7 @@
 				INFOPLIST_FILE = ClimateControl/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl1;
+				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -761,6 +949,80 @@
 			};
 			name = Release;
 		};
+		69376B731C79EAEE00963C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ClimateControlWatch_Extension;
+				INFOPLIST_FILE = ClimateControlWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		69376B741C79EAEE00963C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ClimateControlWatch_Extension;
+				INFOPLIST_FILE = ClimateControlWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		69376B751C79EAEE00963C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ClimateControlWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		69376B761C79EAEE00963C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ClimateControlWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshat.com.ClimateControl2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -799,6 +1061,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		69376B771C79EAEE00963C7A /* Build configuration list for PBXNativeTarget "ClimateControlWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69376B751C79EAEE00963C7A /* Debug */,
+				69376B761C79EAEE00963C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69376B791C79EAEE00963C7A /* Build configuration list for PBXNativeTarget "ClimateControlWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69376B731C79EAEE00963C7A /* Debug */,
+				69376B741C79EAEE00963C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
