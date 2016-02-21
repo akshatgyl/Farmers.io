@@ -1,8 +1,10 @@
 PODS:
+  - BMCustomTableView (0.1.0)
   - LoginWithClimate (0.1.1)
   - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
+  - BMCustomTableView
   - LoginWithClimate (from `https://github.com/TheClimateCorporation/LoginWithClimate`,
     tag `0.1.1`)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, branch `xcode7.1`)
@@ -24,6 +26,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  BMCustomTableView: 263be7eae28e521a1f76f235e1ddf124e8d98b81
   LoginWithClimate: d490895ff1f80ef9b0b18a02c7d6c0905f089e08
   SwiftyJSON: 705aa707804b63377e49adf096d3f1bd59afafbc
 

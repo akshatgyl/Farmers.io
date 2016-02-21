@@ -8,6 +8,9 @@ target 'ClimateControl' do
 	pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'xcode7.1'
 
 	pod "LoginWithClimate", :git => 'https://github.com/TheClimateCorporation/LoginWithClimate', :tag => '0.1.1'
+
+pod "BMCustomTableView"
+
 end
 
 target 'ClimateControlTests' do
@@ -16,7 +19,9 @@ end
 
 target 'ClimateControlUITests' do
 
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'xcode7.1'
 
+    pod "LoginWithClimate", :git => 'https://github.com/TheClimateCorporation/LoginWithClimate', :tag => '0.1.1'
 
 end
 

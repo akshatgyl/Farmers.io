@@ -1,3 +1,5 @@
+
+
 //
 //  ClimateControlUITests.swift
 //  ClimateControlUITests
@@ -7,6 +9,8 @@
 //
 
 import XCTest
+import LoginWithClimate
+
 
 class ClimateControlUITests: XCTestCase {
         
@@ -31,6 +35,24 @@ class ClimateControlUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let element = app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element
+        element.childrenMatchingType(.Button).element.tap()
+        
+        let emailTextField = app.textFields["Email"]
+        emailTextField.tap()
+        emailTextField.typeText("adityadhingra07@gmail.com")
+        app.secureTextFields["Password"].typeText("Akshat1122")
+        element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).elementBoundByIndex(1).childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.tap()
+        
+        let tablesQuery = app.tables
+        tablesQuery.staticTexts["Test_field3"].swipeUp()
+        
+        let testField2StaticText = tablesQuery.staticTexts["Test_field2"]
+        testField2StaticText.swipeUp()
+        testField2StaticText.swipeDown()
+        testField2StaticText.swipeUp()
     }
     
 }

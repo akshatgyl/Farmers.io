@@ -1,0 +1,6 @@
+framework module Pods_ClimateControlUITests {
+  umbrella header "Pods-ClimateControlUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

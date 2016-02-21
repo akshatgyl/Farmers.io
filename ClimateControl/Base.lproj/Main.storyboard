@@ -11,10 +11,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,34 +22,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE6-lA-SS9">
-                                <rect key="frame" x="166" y="324" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-ah-sPb">
-                                <rect key="frame" x="121" y="421" width="78" height="30"/>
-                                <animations/>
-                                <state key="normal" title="show fields"/>
-                                <connections>
-                                    <action selector="onShowFields:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeD-Yo-dse"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="TE6-lA-SS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2aW-hB-zin"/>
-                            <constraint firstItem="TE6-lA-SS9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GD6-tZ-elu"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OAj-9j-mkE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="label" destination="TE6-lA-SS9" id="9l5-Jo-Xa9"/>
                         <segue destination="eFB-dJ-o0Y" kind="modal" identifier="displayFields" id="gTM-Sr-zii"/>
                     </connections>
                 </viewController>
@@ -57,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="951.5" y="261.5"/>
         </scene>
-        <!--Fields View Controller-->
+        <!--Fields Table View Controller-->
         <scene sceneID="Ek9-8o-Pah">
             <objects>
-                <viewController id="eWv-Zk-Tr1" customClass="FieldsViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eWv-Zk-Tr1" customClass="FieldsTableViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CcB-BX-NnX"/>
                         <viewControllerLayoutGuide type="bottom" id="pvR-Ok-PXR"/>
@@ -69,23 +47,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amH-Ws-6rX">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="169" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iI5-GQ-eGK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fieldCell" rowHeight="169" id="GUj-gc-dcm" customClass="FieldsCell" customModule="ClimateControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GUj-gc-dcm" id="Yty-b1-s3Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qFS-Kv-5ek">
+                                                    <rect key="frame" x="127" y="20" width="240" height="128"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Field Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-5K-nbT">
+                                                    <rect key="frame" x="18" y="73" width="86" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="fieldNameLabel" destination="1yH-5K-nbT" id="F56-2n-0qL"/>
+                                            <outlet property="thumbNailView" destination="qFS-Kv-5ek" id="o4u-LV-Qtn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iI5-GQ-eGK" firstAttribute="leading" secondItem="yVV-nt-zbr" secondAttribute="leading" id="6j0-GC-j1d"/>
+                            <constraint firstAttribute="trailing" secondItem="iI5-GQ-eGK" secondAttribute="trailing" id="KLX-AU-7wS"/>
+                            <constraint firstItem="pvR-Ok-PXR" firstAttribute="top" secondItem="iI5-GQ-eGK" secondAttribute="bottom" id="OMp-tG-2xu"/>
+                            <constraint firstItem="iI5-GQ-eGK" firstAttribute="top" secondItem="yVV-nt-zbr" secondAttribute="top" id="Obj-0P-dgS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iMg-MO-DC1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="thumbnailView" destination="amH-Ws-6rX" id="ypb-7o-rCY"/>
+                        <outlet property="customTableView" destination="iI5-GQ-eGK" id="GMc-yE-2XK"/>
+                        <segue destination="h8c-nK-ncL" kind="show" identifier="displayDetails" id="0My-Q6-QBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-Ap-5kO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2067.5" y="261.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oFU-HR-S1d">
+            <objects>
+                <viewController id="h8c-nK-ncL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bc0-ab-WE7"/>
+                        <viewControllerLayoutGuide type="bottom" id="IZK-c4-bMD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ghg-t3-HmY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ULq-va-61W"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-T2-b7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499.5" y="261.5"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="nQc-LV-1Qo">
@@ -157,13 +193,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRI-bq-4iT" userLabel="Forecast Container View">
                                         <rect key="frame" x="0.0" y="425" width="600" height="115"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
                                                 <rect key="frame" x="143" y="0.0" width="314" height="115"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-i7-DNK">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-i7-DNK">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-ip-3vb" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-ip-3vb" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <constraints>
@@ -177,7 +213,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="10"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-m9-NPD" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-m9-NPD" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <userDefinedRuntimeAttributes>
@@ -195,10 +231,10 @@
                                                             <constraint firstItem="zHk-ip-3vb" firstAttribute="height" secondItem="tRj-m9-NPD" secondAttribute="height" id="Vzd-OG-Yny"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sqn-z2-8c4">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sqn-z2-8c4">
                                                         <rect key="frame" x="172" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-px-tSW" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-px-tSW" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <userDefinedRuntimeAttributes>
@@ -210,7 +246,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="12"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6A-h9-idt" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6A-h9-idt" customClass="ForecastView" customModule="ClimateControl" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <animations/>
                                                                 <userDefinedRuntimeAttributes>

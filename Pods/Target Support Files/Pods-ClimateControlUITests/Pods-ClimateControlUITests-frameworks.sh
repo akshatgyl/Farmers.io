@@ -84,12 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-ClimateControl/BMCustomTableView.framework"
-  install_framework "Pods-ClimateControl/LoginWithClimate.framework"
-  install_framework "Pods-ClimateControl/SwiftyJSON.framework"
+  install_framework "Pods-ClimateControlUITests/LoginWithClimate.framework"
+  install_framework "Pods-ClimateControlUITests/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-ClimateControl/BMCustomTableView.framework"
-  install_framework "Pods-ClimateControl/LoginWithClimate.framework"
-  install_framework "Pods-ClimateControl/SwiftyJSON.framework"
+  install_framework "Pods-ClimateControlUITests/LoginWithClimate.framework"
+  install_framework "Pods-ClimateControlUITests/SwiftyJSON.framework"
 fi
