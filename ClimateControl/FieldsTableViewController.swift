@@ -240,7 +240,7 @@ class FieldsTableViewController: UIViewController, WCSessionDelegate, CLLocation
         } else if segue.identifier == "displayUser" {
         
             let vc = segue.destinationViewController as! UserInfoViewController
-            vc.session = self.session
+            
         }
     }
     

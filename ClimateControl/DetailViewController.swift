@@ -20,6 +20,7 @@ class DetailViewController: UIViewController,CLLocationManagerDelegate, MKMapVie
     
     
     @IBOutlet weak var roundedPopUpView: UIView!
+    private lazy var presentationAnimator = GuillotineTransitionAnimation()
     
     var session: Session?
     

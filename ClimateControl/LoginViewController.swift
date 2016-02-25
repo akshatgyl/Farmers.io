@@ -11,14 +11,22 @@ import LoginWithClimate
 import AVKit
 import AVFoundation
 
+var session: Session?
+
 class LoginViewController: UIViewController, LoginWithClimateDelegate {
     
     @IBOutlet weak var animatedView: LoginANMTDView!
     
     var accessToken: String?
-    var seesion: Session?
+//    var session: Session?
     
     var player: AVPlayer?
+    
+    
+    
+    func getSession() -> Session {
+        return session!
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,13 +73,13 @@ class LoginViewController: UIViewController, LoginWithClimateDelegate {
 //        player?.play()
 //    }
     
-    func didLoginWithClimate(session: Session) {
-        self.seesion = session
+    func didLoginWithClimate(let session1: Session) {
+        session = session1
         print("access")
-        print(session.accessToken)
+        print(session!.accessToken)
         print("token")
-        self.accessToken = session.accessToken
-        listFieldNames(session.accessToken) {
+        self.accessToken = session!.accessToken
+        listFieldNames(session!.accessToken) {
             (fieldNames: [String]) in
             dispatch_async(dispatch_get_main_queue(), {
                 //self.label.text = "Welcome \(session.userInfo.firstName)\nYour fields are:\n\(fieldNames.prefix(12))"
@@ -116,9 +124,9 @@ class LoginViewController: UIViewController, LoginWithClimateDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! UINavigationController
         let vcMain = vc.topViewController as! FieldsTableViewController
-        vcMain.session = self.seesion
+        vcMain.session = session
     }
 
 
 }
-
+var mainInstance = LoginViewController()

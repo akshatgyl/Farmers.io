@@ -23,9 +23,10 @@
 		69376B6C1C79EAEE00963C7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B6B1C79EAEE00963C7A /* NotificationController.swift */; };
 		69376B6E1C79EAEE00963C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69376B6D1C79EAEE00963C7A /* Assets.xcassets */; };
 		69376B721C79EAEE00963C7A /* ClimateControlWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 69376B541C79EAEE00963C7A /* ClimateControlWatch.app */; };
-		69376B801C7A092200963C7A /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B7F1C7A092200963C7A /* UserInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		69376B801C7A092200963C7A /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376B7F1C7A092200963C7A /* UserInfoViewController.swift */; };
 		6998BBC41C7946050045D276 /* FieldsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998BBC31C7946050045D276 /* FieldsCell.swift */; };
 		69A1E44E1C789EE000EEE07B /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */; };
+		71A79DBA1C7A31930062AA72 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A79DB91C7A31930062AA72 /* DataViewController.swift */; };
 		72E33A7B33E16FC413C65DB7 /* Pods_ClimateControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E681431668F72D049ED76 /* Pods_ClimateControlUITests.framework */; };
 		894FF0541C79EE07000DF6EA /* blades.png in Resources */ = {isa = PBXBuildFile; fileRef = 894FF04F1C79EE07000DF6EA /* blades.png */; };
 		894FF0551C79EE07000DF6EA /* cloud_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 894FF0501C79EE07000DF6EA /* cloud_1.png */; };
@@ -162,6 +163,7 @@
 		69376B7F1C7A092200963C7A /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		6998BBC31C7946050045D276 /* FieldsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsCell.swift; sourceTree = "<group>"; };
 		69A1E44D1C789EE000EEE07B /* FieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewController.swift; sourceTree = "<group>"; };
+		71A79DB91C7A31930062AA72 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		894FF04F1C79EE07000DF6EA /* blades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blades.png; path = images/blades.png; sourceTree = "<group>"; };
 		894FF0501C79EE07000DF6EA /* cloud_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_1.png; path = images/cloud_1.png; sourceTree = "<group>"; };
 		894FF0511C79EE07000DF6EA /* cloud_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_2.png; path = images/cloud_2.png; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				6998BBC31C7946050045D276 /* FieldsCell.swift */,
 				894FF05C1C79F578000DF6EA /* DetailViewController.swift */,
 				69376B7F1C7A092200963C7A /* UserInfoViewController.swift */,
+				71A79DB91C7A31930062AA72 /* DataViewController.swift */,
 			);
 			path = ClimateControl;
 			sourceTree = "<group>";
@@ -561,7 +564,7 @@
 				TargetAttributes = {
 					692960E31C786D0400F0B0A0 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = WD5637H5AA;
+						DevelopmentTeam = 7A9LG5LNH6;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -578,11 +581,11 @@
 					};
 					69376B531C79EAEE00963C7A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = JTG9T7N598;
+						DevelopmentTeam = 7A9LG5LNH6;
 					};
 					69376B5F1C79EAEE00963C7A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = JTG9T7N598;
+						DevelopmentTeam = 7A9LG5LNH6;
 					};
 				};
 			};
@@ -764,6 +767,7 @@
 				89A8DDB91C7931DB00FA3088 /* Observable.swift in Sources */,
 				89A8DDBD1C7931DB00FA3088 /* WeatherBuilder.swift in Sources */,
 				894FF05D1C79F578000DF6EA /* DetailViewController.swift in Sources */,
+				71A79DBA1C7A31930062AA72 /* DataViewController.swift in Sources */,
 				89A8DDB41C7931DB00FA3088 /* ForecastView.swift in Sources */,
 				89A8DDBA1C7931DB00FA3088 /* OpenWeatherMapService.swift in Sources */,
 				89A8DDB81C7931DB00FA3088 /* LocationService.swift in Sources */,

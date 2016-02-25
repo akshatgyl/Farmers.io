@@ -16,19 +16,21 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var zipcode: UILabel!
     @IBOutlet weak var phone: UILabel!
     
-    var session: Session?
+    private lazy var presentationAnimator = GuillotineTransitionAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print(session)
+        
         print("name" + (session?.userInfo.firstName)!)
         
         name.text = (session?.userInfo.firstName)! + " " + (session?.userInfo.lastName)!
         
         
-        address.text = session?.userInfo.address1
-        zipcode.text = session?.userInfo.zip
-        phone.text = session?.userInfo.phone
+        address.text = "107 McAurther Drive" //session?.userInfo.address1
+        zipcode.text = "61801" //session?.userInfo.zip
+        phone.text = "7655326554" //session?.userInfo.phone
         
         
         // Do any additional setup after loading the view.
@@ -39,7 +41,28 @@ class UserInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var closeAction: UIButton!
+    
+    @IBAction func closeNow(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBOutlet weak var toMenu: UIButton!
+    
+    @IBAction func toAction(sender: UIButton) {
+        let menuVC = storyboard!.instantiateViewControllerWithIdentifier("MenuViewController")
+        menuVC.modalPresentationStyle = .Custom
+        menuVC.transitioningDelegate = self
+        if menuVC is GuillotineAnimationDelegate {
+            presentationAnimator.animationDelegate = menuVC as? GuillotineAnimationDelegate
+        }
+        presentationAnimator.supportView = self.navigationController?.navigationBar
+        presentationAnimator.presentButton = sender
+        self.presentViewController(menuVC, animated: true, completion: nil)
+    }
 
+    
+    
     /*
     // MARK: - Navigation
 
@@ -50,4 +73,18 @@ class UserInfoViewController: UIViewController {
     }
     */
 
+}
+
+
+extension UserInfoViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        presentationAnimator.mode = .Presentation
+        return presentationAnimator
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        presentationAnimator.mode = .Dismissal
+        return presentationAnimator
+    }
 }

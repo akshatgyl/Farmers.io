@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -109,20 +109,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fields" id="iMg-MO-DC1">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="ovK-vZ-CRn">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HrG-D2-tl7">
-                                <rect key="frame" x="16" y="11" width="10" height="22"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="cxJ-7h-7SU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="11g-YZ-ovJ">
+                                <rect key="frame" x="16" y="4" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ic_menu"/>
+                                <state key="normal" image="ic_wb_sunny_white_36pt"/>
                                 <connections>
-                                    <action selector="showMenu:" destination="eWv-Zk-Tr1" eventType="touchUpInside" id="GI9-MF-JEr"/>
+                                    <segue destination="N60-1v-4Yh" kind="presentation" id="d8g-F0-GNq"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Zbi-Dx-3TH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CRn-Mc-hcm">
+                                <rect key="frame" x="323" y="4" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_person_outline_white_36pt"/>
+                                <connections>
+                                    <segue destination="srv-WR-xw5" kind="modal" id="xr8-4R-ey1"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="barButton" destination="HrG-D2-tl7" id="Weh-Wg-nBd"/>
                         <outlet property="customTableView" destination="iI5-GQ-eGK" id="GMc-yE-2XK"/>
                         <segue destination="h8c-nK-ncL" kind="presentation" identifier="displayDetails" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="0My-Q6-QBd"/>
                         <segue destination="OFg-gJ-dT2" kind="show" identifier="showMenuSegue" id="kdR-mS-CxP"/>
@@ -130,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-Ap-5kO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942.5" y="316.5"/>
+            <point key="canvasLocation" x="2167.5" y="261.5"/>
         </scene>
         <!--Details-->
         <scene sceneID="oFU-HR-S1d">
@@ -183,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-T2-b7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2607.5" y="-479.5"/>
+            <point key="canvasLocation" x="2167.5" y="-619.5"/>
         </scene>
         <!--User Info View Controller-->
         <scene sceneID="eSJ-te-2ns">
@@ -201,13 +210,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aditya Dhingra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-zc-b7e">
-                                <rect key="frame" x="20" y="110" width="335" height="65"/>
+                                <rect key="frame" x="20" y="120" width="335" height="65"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-Aw-iVG">
-                                <rect key="frame" x="20" y="42" width="335" height="65"/>
+                                <rect key="frame" x="20" y="64" width="335" height="65"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -230,6 +239,23 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-Hw-b4K">
+                                <rect key="frame" x="13" y="20" width="36" height="36"/>
+                                <state key="normal" image="ic_highlight_off_white_36pt"/>
+                                <connections>
+                                    <action selector="closeNow:" destination="srv-WR-xw5" eventType="touchUpInside" id="Fxy-5V-xzz"/>
+                                    <action selector="toAction:" destination="srv-WR-xw5" eventType="touchUpInside" id="btc-ze-Mzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtk-Il-hhE">
+                                <rect key="frame" x="318" y="28" width="57" height="30"/>
+                                <state key="normal" title="Data">
+                                    <color key="titleColor" red="0.98823535439999999" green="0.10588236149999999" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Idh-n7-lY0" kind="presentation" id="cJ1-vj-MRZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -245,14 +271,47 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="address" destination="0Xb-wD-Bv1" id="dfB-am-IwG"/>
+                        <outlet property="closeAction" destination="4v6-Hw-b4K" id="VgE-bV-bOb"/>
                         <outlet property="name" destination="EZs-zc-b7e" id="0t9-0c-Nsd"/>
                         <outlet property="phone" destination="xsn-Mj-Z2T" id="ukr-5M-816"/>
+                        <outlet property="toMenu" destination="4v6-Hw-b4K" id="fv7-hg-tjl"/>
                         <outlet property="zipcode" destination="jaK-0d-RbV" id="28C-Me-xps"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h71-Pb-ofw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.5" y="332.5"/>
+            <point key="canvasLocation" x="2653.5" y="261.5"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="vQG-re-cgB">
+            <objects>
+                <viewController id="Idh-n7-lY0" customClass="DataViewController" customModule="ClimateControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J3e-dG-Z1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKJ-cK-Dso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eDd-2I-kRg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rawdata" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-0t-aPB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxe-ER-IVC">
+                                <rect key="frame" x="20" y="28" width="36" height="36"/>
+                                <state key="normal" image="ic_highlight_off_white_36pt"/>
+                                <connections>
+                                    <action selector="close:" destination="Idh-n7-lY0" eventType="touchUpInside" id="j1L-bC-pJX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abn-Zk-ic8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3125.5" y="261.5"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="nQc-LV-1Qo">
@@ -307,6 +366,13 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laG-Y1-mlR">
+                                                <rect key="frame" x="14" y="-3" width="36" height="36"/>
+                                                <state key="normal" image="ic_highlight_off_white_36pt"/>
+                                                <connections>
+                                                    <action selector="closeAction:" destination="N60-1v-4Yh" eventType="touchUpInside" id="JSw-K8-v3K"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="tH5-ly-MHL" firstAttribute="height" secondItem="LsL-7l-ED6" secondAttribute="height" id="0XC-pZ-s6i"/>
@@ -318,8 +384,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRI-bq-4iT" userLabel="Forecast Container View">
                                         <rect key="frame" x="0.0" y="425" width="600" height="115"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
-                                                <rect key="frame" x="143" y="0.0" width="314" height="115"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-n3-yE6">
+                                                <rect key="frame" x="142" y="0.0" width="314" height="115"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-i7-DNK">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="115"/>
@@ -463,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i2-a8-5L8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="1080"/>
+            <point key="canvasLocation" x="1594.5" y="-166.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5v1-y5-A1J">
@@ -523,9 +589,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="UJ0-i3-feS"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-iA-ING">
                                         <rect key="frame" x="45" y="153" width="221" height="40"/>
@@ -553,7 +616,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="menuButtonTapped:" destination="OFg-gJ-dT2" eventType="touchUpInside" id="8DA-LI-an3"/>
+                                            <segue destination="eWv-Zk-Tr1" kind="show" id="b67-Vz-5He"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -601,7 +664,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iw9-yQ-Bdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2607.5" y="332.5"/>
+            <point key="canvasLocation" x="3340.5" y="822.5"/>
         </scene>
     </scenes>
     <resources>
@@ -610,9 +673,12 @@
         <image name="farmers.io" width="340" height="77"/>
         <image name="ic_highlight_off_white_36pt" width="36" height="36"/>
         <image name="ic_map_white_36pt" width="36" height="36"/>
-        <image name="ic_menu" width="10" height="14"/>
         <image name="ic_person_outline_white_36pt" width="36" height="36"/>
         <image name="ic_pin_drop_white_36pt" width="36" height="36"/>
         <image name="ic_wb_sunny_white_36pt" width="36" height="36"/>
+        <image name="rawdata" width="375" height="667"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="b67-Vz-5He"/>
+    </inferredMetricsTieBreakers>
 </document>
